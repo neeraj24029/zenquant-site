@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZenQuant — Zen in Mind. Quant in Action.</title>
+  <meta name="description" content="ZenQuant builds risk-first, data-driven quant portfolios for retail investors." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Primary brand blue from logo background ≈ #0060A8
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            zq: {
+              blue: "#0060A8",
+              blue2: "#2B8DFF",
+              ink: "#0B1020",
+              bg: "#F7FAFF",
+              line: "rgba(15, 23, 42, 0.10)",
+              muted: "rgba(15, 23, 42, 0.72)",
+              soft: "rgba(15, 23, 42, 0.55)",
+            }
+          },
+          boxShadow: {
+            soft: "0 18px 60px rgba(2, 6, 23, 0.10)",
+          },
+          borderRadius: {
+            xl2: "1.25rem",
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    .paper-grid {
+      background-image: radial-gradient(rgba(0, 96, 168, .12) 1px, transparent 1px);
+      background-size: 18px 18px;
+    }
+  </style>
+</head>
+
+<body class="bg-zq-bg text-zq-ink antialiased">
+  <!-- Subtle background -->
+  <div class="fixed inset-0 -z-10">
+    <div class="absolute inset-0 paper-grid opacity-18"></div>
+    <div class="absolute -top-56 -right-56 h-[560px] w-[560px] rounded-full blur-3xl opacity-18 bg-gradient-to-br from-zq-blue to-zq-blue2"></div>
+    <div class="absolute -bottom-56 -left-56 h-[560px] w-[560px] rounded-full blur-3xl opacity-12 bg-gradient-to-tr from-zq-blue to-zq-blue2"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-zq-bg/85 backdrop-blur border-b border-zq-line">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <!-- Logo only (minimal) -->
+      <a href="#" class="flex items-center">
+        <!-- IMPORTANT: keep this file in the same folder as index.html -->
+        <img
+          src="zenquant logo.jpg"
+          alt="ZenQuant — Zen in Mind. Quant in Action."
+          class="h-10 sm:h-12 w-auto rounded-xl2 border border-zq-line bg-white shadow-soft object-contain p-2"
+        />
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-zq-muted">
+        <a class="hover:text-zq-blue transition" href="#approach">Approach</a>
+        <a class="hover:text-zq-blue transition" href="#risk">Risk</a>
+        <a class="hover:text-zq-blue transition" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="mailto:hello@zenquantllp.com"
+          class="hidden sm:inline-flex items-center justify-center rounded-xl2 px-4 py-2 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
+        >
+          Email
+        </a>
+
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center rounded-xl2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
+        >
+          Get started
+        </a>
+
+        <button
+          class="md:hidden inline-flex items-center justify-center rounded-xl2 px-3 py-2 bg-white border border-zq-line"
+          aria-label="Open menu"
+          onclick="toggleMobileNav()"
+        >
+          <span class="text-sm font-semibold">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-zq-line bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-4 grid gap-3 text-sm text-zq-muted">
+        <a class="hover:text-zq-blue" href="#approach" onclick="toggleMobileNav()">Approach</a>
+        <a class="hover:text-zq-blue" href="#risk" onclick="toggleMobileNav()">Risk</a>
+        <a class="hover:text-zq-blue" href="#contact" onclick="toggleMobileNav()">Contact</a>
+        <a class="hover:text-zq-blue" href="mailto:hello@zenquantllp.com" onclick="toggleMobileNav()">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="mx-auto max-w-6xl px-4">
+    <section class="pt-16 pb-10 sm:pt-24 sm:pb-14">
+      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.05]">
+        Zen in Mind.<br class="hidden sm:block" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-zq-blue to-zq-blue2">Quant in Action.</span>
+      </h1>
+
+      <p class="mt-5 text-lg sm:text-xl text-zq-muted leading-relaxed max-w-3xl">
+        Data-driven, algorithmic investing with a risk-first approach.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a
+          href="mailto:hello@zenquantllp.com"
+          class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
+        >
+          Contact
+        </a>
+        <a
+          href="#approach"
+          class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
+        >
+          Our approach
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div class="rounded-xl2 bg-white border border-zq-line p-4">
+          <p class="text-xs text-zq-soft">Core</p>
+          <p class="mt-1 font-semibold">Algo + Quant</p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-4">
+          <p class="text-xs text-zq-soft">Input</p>
+          <p class="mt-1 font-semibold">Market data</p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-4">
+          <p class="text-xs text-zq-soft">Method</p>
+          <p class="mt-1 font-semibold">Systematic rules</p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-4">
+          <p class="text-xs text-zq-soft">Priority</p>
+          <p class="mt-1 font-semibold">Risk controls</p>
+        </div>
+      </div>
+
+      <p class="mt-6 text-xs text-zq-soft max-w-3xl">
+        Investing involves risk, including possible loss of principal. Past performance is not indicative of future results.
+      </p>
+    </section>
+
+    <!-- Approach (minimal) -->
+    <section id="approach" class="py-14 border-t border-zq-line">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Approach</h2>
+        <p class="mt-3 text-zq-muted leading-relaxed">
+          Data → signals → portfolio → risk checks.
+        </p>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-3 gap-4">
+        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
+          <h3 class="font-semibold">Research</h3>
+          <p class="mt-2 text-sm text-zq-muted">Tested rules, documented assumptions.</p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
+          <h3 class="font-semibold">Construction</h3>
+          <p class="mt-2 text-sm text-zq-muted">Diversification and sizing constraints.</p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
+          <h3 class="font-semibold">Monitoring</h3>
+          <p class="mt-2 text-sm text-zq-muted">Drift checks and scheduled rebalancing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risk (minimal) -->
+    <section id="risk" class="py-14 border-t border-zq-line">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Risk</h2>
+        <p class="mt-3 text-zq-muted leading-relaxed">
+          Markets change. Models can fail. We build guardrails and communicate risk clearly.
+        </p>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-4">
+        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
+          <h3 class="font-semibold">Controls</h3>
+          <p class="mt-2 text-sm text-zq-muted">
+            Exposure limits • diversification • monitoring.
+          </p>
+        </div>
+        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
+          <h3 class="font-semibold">Disclosure</h3>
+          <p class="mt-2 text-sm text-zq-muted">
+            This site is informational and not financial advice.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (minimal) -->
+    <section id="contact" class="py-14 border-t border-zq-line">
+      <div class="rounded-xl2 bg-white border border-zq-line p-8 shadow-soft flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Contact</h2>
+          <p class="mt-2 text-zq-muted">Email us for early access or a demo.</p>
+          <a class="mt-3 inline-flex text-zq-blue font-semibold hover:opacity-80" href="mailto:hello@zenquantllp.com">
+            hello@zenquantllp.com →
+          </a>
+        </div>
+
+        <div class="flex gap-3">
+          <a
+            href="mailto:hello@zenquantllp.com"
+            class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
+          >
+            Email
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
+            onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;"
+          >
+            Top
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 text-xs text-zq-soft">
+      <div class="border-t border-zq-line pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <p>© <span id="year"></span> ZenQuant.</p>
+        <div class="flex gap-4">
+          <a class="hover:text-zq-blue transition" href="#">Privacy</a>
+          <a class="hover:text-zq-blue transition" href="#">Terms</a>
+          <a class="hover:text-zq-blue transition" href="#">Risk Disclosure</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function toggleMobileNav() {
+      document.getElementById("mobileNav").classList.toggle("hidden");
+    }
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
