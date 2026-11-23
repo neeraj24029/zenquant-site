@@ -1,265 +1,473 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenQuant — Zen in Mind. Quant in Action.</title>
-  <meta name="description" content="ZenQuant builds risk-first, data-driven quant portfolios for retail investors." />
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Primary brand blue from logo background ≈ #0060A8
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            zq: {
-              blue: "#0060A8",
-              blue2: "#2B8DFF",
-              ink: "#0B1020",
-              bg: "#F7FAFF",
-              line: "rgba(15, 23, 42, 0.10)",
-              muted: "rgba(15, 23, 42, 0.72)",
-              soft: "rgba(15, 23, 42, 0.55)",
-            }
-          },
-          boxShadow: {
-            soft: "0 18px 60px rgba(2, 6, 23, 0.10)",
-          },
-          borderRadius: {
-            xl2: "1.25rem",
-          }
-        }
-      }
-    };
-  </script>
-
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <style>
-    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
-    .paper-grid {
-      background-image: radial-gradient(rgba(0, 96, 168, .12) 1px, transparent 1px);
-      background-size: 18px 18px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZenQuant — Zen in Mind. Quant in Action.</title>
+<meta name="description" content="ZenQuant builds risk-first, data-driven quant portfolios for retail investors.">
+<link rel="icon" type="image/webp" href="zenquant-logo-gold.webp">
+<link rel="apple-touch-icon" href="zenquant-logo-gold.webp">
+<meta name="theme-color" content="#08438a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZenQuant">
+<meta property="og:title" content="ZenQuant — Zen in Mind. Quant in Action.">
+<meta property="og:description" content="Data-driven, algorithmic investing with a risk-first approach.">
+<meta property="og:url" content="https://www.zenquantllp.com/">
+<meta property="og:image" content="https://www.zenquantllp.com/zenquant-logo-gold.webp">
+<meta name="twitter:card" content="summary">
+<link rel="me" href="https://www.linkedin.com/company/106712615/">
+<link rel="me" href="https://www.instagram.com/zenquantventures/">
+<link rel="me" href="https://www.facebook.com/profile.php?id=61590054542589">
+<link rel="me" href="https://www.youtube.com/@NeerajPriyadarshi">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* ZenQuant palette: Royal Blue + Gold (see README "Brand palette") */
+:root{--surface-0:#fff;--surface-100:#f6f8fc;--surface-200:#e9eff8;--line:#d3ddeb;--line-strong:#8494ad;--ink:#0a1a33;--ink-muted:#44546e;--ink-subtle:#5a6880;--brand:#0b5cb8;--brand-strong:#08438a;--brand-tint:#e4eefb;--on-brand:#fff;--accent:#8a6100;--accent-tint:#fbf1d9;--positive:#0d7a4a;--negative:#c0392b;--shadow-1:0 1px 2px rgba(10,26,51,.06);--shadow-2:0 10px 30px rgba(10,26,51,.10)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--surface-0:#0b1f45;--surface-100:#061430;--surface-200:#12295a;--line:#1f3a70;--line-strong:#5b74a0;--ink:#eef3fb;--ink-muted:#a9b8d0;--ink-subtle:#8a9bb8;--brand:#5aa8f5;--brand-strong:#8cc3fa;--brand-tint:#11306a;--on-brand:#061430;--accent:#e4b241;--accent-tint:#2a2a1a;--positive:#3ccf8e;--negative:#ff7b6b}}
+:root[data-theme="dark"]{--surface-0:#0b1f45;--surface-100:#061430;--surface-200:#12295a;--line:#1f3a70;--line-strong:#5b74a0;--ink:#eef3fb;--ink-muted:#a9b8d0;--ink-subtle:#8a9bb8;--brand:#5aa8f5;--brand-strong:#8cc3fa;--brand-tint:#11306a;--on-brand:#061430;--accent:#e4b241;--accent-tint:#2a2a1a;--positive:#3ccf8e;--negative:#ff7b6b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface-100);color:var(--ink);font:16px/24px Inter,system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.display{font-family:'Instrument Sans',sans-serif;font-weight:600}
+.eyebrow{font:600 12px/16px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.mono{font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+a{color:var(--brand)}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--surface-100) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font:600 20px 'Instrument Sans';color:var(--ink);text-decoration:none}
+.logo img{width:40px;height:40px;border-radius:10px;display:block}
+.logo small{display:block;font:500 11px/14px Inter;color:var(--ink-subtle);letter-spacing:.02em}
+:root{--gold:#e4b241;--gold-strong:#c9962a;--logo-blue:#0b4f9e;--logo-blue-deep:#062f66}
+.mark{background:radial-gradient(circle at 50% 40%,var(--logo-blue),var(--logo-blue-deep));color:var(--gold)}
+.hero-logo{width:96px;height:96px;border-radius:24px;display:block;margin-bottom:28px;box-shadow:var(--shadow-2)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:var(--ink-muted);text-decoration:none;font-size:14px;font-weight:500}
+.menu-btn{display:none;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid var(--line-strong);background:var(--surface-0);color:var(--ink);cursor:pointer}
+.menu-btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+nav.mnav{height:auto;flex-direction:column;align-items:stretch;justify-content:flex-start}
+@media (max-width:480px){.logo small,.links .btn{display:none}}
+.mnav{display:none;border-top:1px solid var(--line);background:var(--surface-100)}
+.mnav.open{display:flex}
+.mnav a{display:block;padding:14px 24px;color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+@media (min-width:861px){.mnav.open{display:none}}
+.social{display:flex;gap:10px;align-items:center}
+.social a{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:10px;border:1px solid var(--line);color:var(--ink-muted);margin:0}
+.social a:hover{color:var(--brand);border-color:var(--brand)}
+.social svg{width:18px;height:18px}
+.contact .social a{border-color:rgba(255,255,255,.4);color:#fff}
+.contact .social a:hover{color:var(--gold);border-color:var(--gold)}
+footer .legal a{margin-left:20px}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-block;font:600 15px/20px Inter;padding:12px 20px;border-radius:12px;text-decoration:none;border:1px solid transparent}
+.btn-p{background:var(--gold);color:#0a1a33;box-shadow:0 1px 0 rgba(10,26,51,.08)}.btn-p:hover{background:var(--gold-strong)}
+.btn-s:hover{border-color:var(--brand);color:var(--brand)}
+.links a.btn-p,.links a.btn-p:hover{color:#0a1a33}
+.btn-s{background:var(--surface-0);color:var(--ink);border-color:var(--line-strong)}
+.btn-sm{padding:8px 14px;font-size:14px}
+.hero{padding-top:112px;padding-bottom:96px;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:64px;line-height:68px;letter-spacing:-.03em;margin:16px 0 20px}
+.hero h1 span{color:var(--brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero h1 span,:root:not([data-theme="light"]) .s h2 em{color:var(--gold)}}
+:root[data-theme="dark"] .hero h1 span{color:var(--gold)}
+.lead{font-size:18px;line-height:28px;color:var(--ink-muted);max-width:46ch;margin:0 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.panel{background:var(--surface-0);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-2);padding:24px}
+.pipe{display:grid;gap:10px;margin-top:16px}
+.step{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-radius:12px;background:var(--surface-200)}
+.step span:first-child{font-weight:600}
+.step .mono{font-size:13px;color:var(--ink-subtle)}
+.step.on{background:var(--accent-tint);box-shadow:inset 0 0 0 1px var(--gold)}.step.on .mono{color:var(--accent)}
+.panel{border-top:3px solid var(--gold)}
+.perf{border-top:3px solid var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact{padding:28px 24px;border-right:1px solid var(--line)}.fact:last-child{border:0}
+.fact .v{font:600 20px/28px 'Instrument Sans';margin-top:6px}
+section.s{padding:96px 0}
+.s h2{font-size:44px;line-height:50px;letter-spacing:-.02em;margin:12px 0 16px;max-width:18ch}
+.s .intro{color:var(--ink-muted);font-size:18px;line-height:28px;max-width:56ch;margin:0 0 48px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--surface-0);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow-1);transition:box-shadow .18s ease-out}
+.card:hover{box-shadow:var(--shadow-2)}
+.card h3{font:600 20px/28px 'Instrument Sans';margin:12px 0 8px}
+.card p{margin:0;color:var(--ink-muted);font-size:15px;line-height:22px}
+.tape{border-top:1px solid var(--line);overflow:hidden;white-space:nowrap}
+.tape-in{display:flex;gap:32px;padding:10px 24px;font:13px/20px 'JetBrains Mono',monospace;max-width:1120px;margin:0 auto;overflow-x:auto;scrollbar-width:none}
+.tape-in b{font-family:Inter,sans-serif;font-weight:600;margin-right:8px}
+.up{color:var(--positive)}.dn{color:var(--negative)}
+.mkts{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.mk{padding:16px;min-height:220px}
+.ix{padding:24px 28px}
+.ix-top{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.ix h3{font:600 20px/28px 'Instrument Sans';margin:4px 0 0}
+.pill{font:600 11px/16px Inter;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:9999px;background:var(--surface-200);color:var(--ink-muted);white-space:nowrap}
+.pill.live{background:var(--brand-tint);color:var(--brand)}
+.ix-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:20px 0 4px}
+.ix-price .v{font:500 36px/40px 'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+.ix-price .c{font:500 15px/20px 'JetBrains Mono',monospace}
+.ix-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.ix-row .k{font:600 11px/16px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-subtle)}
+.ix-row .n{font:500 15px/22px 'JetBrains Mono',monospace;font-variant-numeric:tabular-nums;margin-top:2px}
+.region{margin-bottom:32px}
+.rh{font:600 18px/24px 'Instrument Sans',sans-serif;margin:0 0 14px;display:flex;align-items:baseline;gap:10px}
+.rh span{font:500 12px/16px 'JetBrains Mono',monospace;color:var(--ink-subtle)}
+.m3{grid-template-columns:repeat(3,1fr)}
+.m3{gap:20px}.m3 .ix{padding:22px;min-width:0}.m3 .ix-price .v{font-size:30px;line-height:34px}
+.m3 .ix-top{flex-direction:column-reverse;gap:10px}.m3 .pill{align-self:flex-start}
+.m3 .ix-row{gap:8px}.m3 .ix-row .n{font-size:13px}.m3 .ix-row .k{font-size:10px;letter-spacing:.06em}
+.spark{display:block;width:100%;height:56px;margin-top:16px}
+.spark-cap{display:flex;justify-content:space-between;font:12px/16px 'JetBrains Mono',monospace;color:var(--ink-subtle);margin-top:4px}
+.perf{padding:28px;margin-top:8px}
+.perf-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.perf h3{font:600 20px/28px 'Instrument Sans';margin:4px 0 0}
+.legend{display:flex;gap:16px;font-size:13px;color:var(--ink-muted)}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+.up-bg{background:var(--positive)}.dn-bg{background:var(--negative)}
+.pr{display:grid;grid-template-columns:150px 1fr 72px;align-items:center;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+.pr .nm{font-weight:500;font-size:14px}.pr .nm small{display:block;color:var(--ink-subtle);font-size:12px}
+.pr .track{position:relative;height:14px}
+.pr .track::before{content:"";position:absolute;left:50%;top:-6px;bottom:-6px;border-left:1px dashed var(--line-strong)}
+.pr .bar{position:absolute;top:0;height:14px;border-radius:3px}
+.pr .pv{font:500 14px 'JetBrains Mono',monospace;text-align:right}
+.ctrl{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid var(--line)}
+.ctrl li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.ctrl .ci{color:var(--accent);font-size:13px}
+.ctrl b{font-weight:600}.ctrl small{display:block;color:var(--ink-muted);font-size:14px;line-height:20px;margin-top:2px}
+.mk2{align-items:start}
+.mcard{padding:28px}
+.mhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.mhead h3{font:600 24px/30px 'Instrument Sans';margin:4px 0 0}
+.badge{font:600 12px/16px Inter;padding:6px 12px;border-radius:9999px;white-space:nowrap}
+.badge.up{background:color-mix(in srgb,var(--positive) 14%,transparent)}.badge.dn{background:color-mix(in srgb,var(--negative) 14%,transparent)}
+.asof{font:12px/16px 'JetBrains Mono',monospace;color:var(--ink-subtle);margin-top:6px}
+.breadth{margin-top:20px}
+.bbar{display:flex;height:10px;border-radius:9999px;overflow:hidden;background:var(--surface-200);gap:2px}
+.bbar span{display:block;height:100%}
+.bcap{display:flex;justify-content:space-between;font-size:13px;color:var(--ink-muted);margin-top:8px}
+.movers{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.movers h4{margin:0 0 6px;font:600 12px/16px Inter;letter-spacing:.1em;text-transform:uppercase}
+.mv{list-style:none;margin:0;padding:0}
+.mv li{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:8px 0;border-top:1px solid var(--line)}
+.mv .sy{font-weight:600;font-size:14px}.mv .nm2{grid-column:1;font-size:12px;color:var(--ink-subtle);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mv .pc{font:500 13px 'JetBrains Mono',monospace;text-align:right}.mv .cl{font:12px 'JetBrains Mono',monospace;color:var(--ink-subtle);text-align:right}
+@media (max-width:480px){.movers{grid-template-columns:1fr}}
+.news{list-style:none;margin:0;padding:0}
+.news li{padding:12px 0;border-top:1px solid var(--line)}
+.news a{color:var(--ink);text-decoration:none;font-weight:500;line-height:22px}.news a:hover{color:var(--brand);text-decoration:underline}
+.news .meta{font-size:12px;color:var(--ink-subtle);margin-top:4px}
+.news-card{padding:24px}
+.feed{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:24px;align-items:start}
+.short{padding:0;overflow:hidden;border-top:3px solid var(--gold)}
+.yt{position:relative;display:block;width:100%;aspect-ratio:9/16;border:0;padding:0;margin:0;cursor:pointer;background:#000;color:#fff;text-align:left}
+.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,20,48,.95),rgba(6,20,48,0) 55%)}
+.yt .play{position:absolute;left:50%;top:auto;bottom:120px;transform:translateX(-50%);width:64px;height:64px;border-radius:50%;background:var(--gold);color:#0a1a33;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.yt .play svg{width:28px;height:28px;margin-left:3px}
+.yt:hover .play{background:var(--gold-strong)}
+.yt:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.yt-cap{position:absolute;left:18px;right:18px;bottom:18px;z-index:1;display:grid;gap:6px}
+.yt-cap b{font:600 17px/23px 'Instrument Sans',sans-serif;color:#fff}
+.short iframe{display:block;width:100%;aspect-ratio:9/16;border:0}
+.plats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.plat{display:flex;flex-direction:column;gap:10px;padding:22px;text-decoration:none;color:var(--ink);transition:box-shadow .18s ease-out,border-color .18s}
+.plat:hover{box-shadow:var(--shadow-2);border-color:var(--gold)}
+.plat .pi{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 30%,var(--logo-blue),var(--logo-blue-deep));color:var(--gold)}
+.plat .pi svg{width:22px;height:22px}
+.plat b{font:600 18px/24px 'Instrument Sans',sans-serif}
+.plat .h{font:13px/18px 'JetBrains Mono',monospace;color:var(--ink-subtle)}
+.plat p{margin:0;color:var(--ink-muted);font-size:14px;line-height:20px}
+.plat .go{margin-top:auto;font-weight:600;font-size:14px;color:var(--brand)}
+@media (max-width:860px){.feed{grid-template-columns:1fr}.short{max-width:340px;width:100%;justify-self:center}}
+@media (max-width:480px){.plats{grid-template-columns:1fr}}
+@media (max-width:860px){.m3{grid-template-columns:1fr}.pr{grid-template-columns:110px 1fr 64px}}
+.note{margin:16px 0 0;font-size:13px;line-height:20px;color:var(--ink-subtle)}
+@media (max-width:860px){.mkts{grid-template-columns:1fr}}
+.risk{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line)}
+.list li span:last-child{color:var(--ink-muted)}
+.disc{background:var(--surface-200);border-radius:12px;padding:16px 20px;font-size:14px;line-height:20px;color:var(--ink-muted);display:flex;gap:12px;margin-top:24px}
+.contact{background:var(--brand);color:var(--on-brand);border-radius:20px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.contact h2{margin:0 0 8px;font-size:36px;line-height:42px;color:var(--on-brand)}
+.contact p{margin:0;opacity:.9}
+.contact{align-items:flex-start}
+.contact.mark{background:radial-gradient(circle at 30% 30%,var(--logo-blue),var(--logo-blue-deep))}
+.cform{flex:1 1 340px;display:grid;gap:12px;background:rgba(4,16,40,.35);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:24px}
+.cform label{display:grid;gap:6px;font:600 13px/18px Inter;color:#fff}
+.cform input,.cform select,.cform textarea{font:400 15px/22px Inter;padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.45);background:#fff;color:#0b1020;width:100%}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:2px solid var(--gold);outline-offset:2px}
+.cform .btn{background:var(--gold);color:#0b1020;justify-self:start;cursor:pointer}
+.cform .btn[disabled]{opacity:.6;cursor:wait}
+.cform .hp{display:none}
+.cstatus{margin:0;font-size:14px;line-height:20px;color:#fff;min-height:20px}
+.btn-inv{background:var(--on-brand);color:var(--brand)}
+footer{padding:40px 0;color:var(--ink-subtle);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--ink-subtle);text-decoration:none;margin-left:20px}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding-top:64px;padding-bottom:64px}.hero h1{font-size:44px;line-height:48px}.facts{grid-template-columns:1fr 1fr}.fact:nth-child(2){border-right:0}.fact{border-bottom:1px solid var(--line)}.grid,.risk{grid-template-columns:1fr}.links a:not(.btn){display:none}.menu-btn{display:inline-flex}section.s{padding:64px 0}.s h2{font-size:32px;line-height:38px}.contact{padding:32px}}
+@media (max-width:480px){.wrap{padding:0 16px}.facts{grid-template-columns:1fr}.fact{border-right:0}}
+</style>
 </head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#"><img src="zenquant-logo-gold.webp" alt=""><span>ZenQuant<small>Zen in Mind. Quant in Action.</small></span></a>
+<div class="links"><a href="#markets">Markets</a><a href="#news">News</a><a href="#feed">Feed</a><a href="#approach">Approach</a><a href="#risk">Risk</a><a href="#contact">Contact</a><a class="btn btn-p btn-sm" href="#contact">Get started</a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+</nav></div>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="#markets">Markets</a><a href="#news">News</a><a href="#feed">Feed</a><a href="#approach">Approach</a><a href="#risk">Risk</a><a href="#contact">Contact</a></nav>
+<div class="tape" id="tape"></div>
+</header>
 
-<body class="bg-zq-bg text-zq-ink antialiased">
-  <!-- Subtle background -->
-  <div class="fixed inset-0 -z-10">
-    <div class="absolute inset-0 paper-grid opacity-18"></div>
-    <div class="absolute -top-56 -right-56 h-[560px] w-[560px] rounded-full blur-3xl opacity-18 bg-gradient-to-br from-zq-blue to-zq-blue2"></div>
-    <div class="absolute -bottom-56 -left-56 h-[560px] w-[560px] rounded-full blur-3xl opacity-12 bg-gradient-to-tr from-zq-blue to-zq-blue2"></div>
+<main>
+<div class="wrap hero">
+<div>
+<img class="hero-logo" src="zenquant-logo-gold.webp" alt="ZenQuant">
+<div class="eyebrow">Systematic · Risk-first</div>
+<h1 class="display">Zen in Mind.<br><span>Quant in Action.</span></h1>
+<p class="lead">Data-driven, algorithmic investing with a risk-first approach.</p>
+<div class="cta"><a class="btn btn-p" href="#contact">Request early access</a><a class="btn btn-s" href="#approach">Our approach</a></div>
+</div>
+<div class="panel" aria-label="ZenQuant process">
+<div class="eyebrow">How a decision is made</div>
+<div class="pipe">
+<div class="step"><span>Market data</span><span class="mono">input</span></div>
+<div class="step"><span>Signals</span><span class="mono">systematic rules</span></div>
+<div class="step"><span>Portfolio</span><span class="mono">sizing + diversification</span></div>
+<div class="step on"><span>Risk checks</span><span class="mono">priority</span></div>
+</div>
+</div>
+</div>
+
+<div class="wrap"><div class="facts">
+<div class="fact"><div class="eyebrow">Core</div><div class="v">Algo + Quant</div></div>
+<div class="fact"><div class="eyebrow">Input</div><div class="v">Market data</div></div>
+<div class="fact"><div class="eyebrow">Method</div><div class="v">Systematic rules</div></div>
+<div class="fact"><div class="eyebrow">Priority</div><div class="v">Risk controls</div></div>
+</div></div>
+
+<section class="s" id="markets"><div class="wrap">
+<div class="eyebrow">Markets</div>
+<h2 class="display">NIFTY 50 and Nasdaq-100 at the close.</h2>
+<p class="intro">Official end-of-day levels, how many stocks rose or fell, and the day's biggest movers.</p>
+<div class="mkts mk2"><div id="mk-India"></div><div id="mk-US"></div></div>
+<p class="note" id="mk-note">End-of-day index data, delayed. Informational only, not investment advice.</p>
+</div></section>
+
+<section class="s" id="news" style="padding-top:0"><div class="wrap">
+<div class="eyebrow">Research &amp; news</div>
+<h2 class="display">What's moving markets.</h2>
+<p class="intro">Headlines from India and global markets. Links open the original publisher.</p>
+<div class="mkts">
+<div class="card news-card"><div class="eyebrow" style="margin-bottom:12px">India markets</div><ul class="news" id="news-in"></ul><p class="note" id="news-in-note"></p></div>
+<div class="card news-card"><div class="eyebrow" style="margin-bottom:12px">Global markets</div><div id="news-global"></div></div>
+</div>
+</div></section>
+
+<section class="s" id="feed" style="padding-top:0"><div class="wrap">
+<div class="eyebrow">From our feed</div>
+<h2 class="display">Reels, shorts and carousels.</h2>
+<p class="intro">Bite-sized market numbers and explainers. Watch here, or follow ZenQuant where you scroll.</p>
+<div class="feed">
+  <div class="short card">
+    <button class="yt" id="yt" data-id="Y6avJ7ayadc" aria-label="Play: +140% Profit Isn't Always Cheap – 3 Q2 FY27 Numbers">
+      <img src="https://i.ytimg.com/vi/Y6avJ7ayadc/oar2.jpg" alt="" loading="lazy">
+      <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg></span>
+      <span class="yt-cap"><span class="eyebrow" style="color:var(--gold)">YouTube Short</span><b>+140% Profit Isn't Always Cheap – 3 Q2 FY27 Numbers</b></span>
+    </button>
   </div>
+  <div class="plats" id="plats"></div>
+</div>
+</div></section>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-zq-bg/85 backdrop-blur border-b border-zq-line">
-    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-      <!-- Logo only (minimal) -->
-      <a href="#" class="flex items-center">
-        <!-- IMPORTANT: keep this file in the same folder as index.html -->
-        <img
-          src="zenquant-logo.jpg"
-          alt="ZenQuant — Zen in Mind. Quant in Action."
-          class="h-10 sm:h-12 w-auto rounded-xl2 border border-zq-line bg-white shadow-soft object-contain p-2"
-        />
-      </a>
+<section class="s" id="approach" style="padding-top:0"><div class="wrap">
+<div class="eyebrow">Approach</div>
+<h2 class="display">Data → signals → portfolio → risk checks.</h2>
+<p class="intro">Every step is a rule we can test, explain and monitor.</p>
+<div class="grid">
+<div class="card"><div class="eyebrow mono">01 · Research</div><h3>Tested rules</h3><p>Tested rules, documented assumptions.</p></div>
+<div class="card"><div class="eyebrow mono">02 · Construction</div><h3>Sized to risk</h3><p>Diversification and sizing constraints.</p></div>
+<div class="card"><div class="eyebrow mono">03 · Monitoring</div><h3>Always on</h3><p>Drift checks and scheduled rebalancing.</p></div>
+</div>
+</div></section>
 
-      <nav class="hidden md:flex items-center gap-8 text-sm text-zq-muted">
-        <a class="hover:text-zq-blue transition" href="#approach">Approach</a>
-        <a class="hover:text-zq-blue transition" href="#risk">Risk</a>
-        <a class="hover:text-zq-blue transition" href="#contact">Contact</a>
-      </nav>
+<section class="s" id="risk" style="padding-top:0"><div class="wrap risk">
+<div>
+<div class="eyebrow">Risk</div>
+<h2 class="display">Markets change. Models can fail.</h2>
+<p class="intro" style="margin-bottom:0">We build guardrails and communicate risk clearly.</p>
+</div>
+<div>
+<div class="eyebrow">Our controls</div>
+<ol class="ctrl">
+<li><span class="ci mono">01</span><span><b>Exposure limits</b></span></li>
+<li><span class="ci mono">02</span><span><b>Diversification</b><small>Diversification and sizing constraints.</small></span></li>
+<li><span class="ci mono">03</span><span><b>Monitoring</b><small>Drift checks and scheduled rebalancing.</small></span></li>
+</ol>
+<div class="disc"><strong style="color:var(--ink)">ⓘ</strong><span>Investing involves risk, including possible loss of principal. Past performance is not indicative of future results. This site is informational and not financial advice.</span></div>
+</div>
+</div></section>
 
-      <div class="flex items-center gap-3">
-        <a
-          href="mailto:hello@zenquantllp.com"
-          class="hidden sm:inline-flex items-center justify-center rounded-xl2 px-4 py-2 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
-        >
-          Email
-        </a>
+<section class="s" id="contact" style="padding-top:0"><div class="wrap">
+<div class="contact mark">
+<div style="flex:1 1 280px"><h2 class="display" style="color:var(--gold)">Zen in Mind. Quant in Action.</h2><p style="color:#fff">Interested in early access or a demo? Get in touch and we'll get back to you.</p>
+<p style="color:#fff;margin:28px 0 12px;font-weight:600">Follow ZenQuant</p>
+<div class="social" data-social></div></div>
+<form class="cform" id="cform" novalidate>
+  <!-- Delivery: Web3Forms sends submissions to the inbox tied to this key; the address never appears in the page. -->
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+  <input type="hidden" name="subject" value="New enquiry from zenquantllp.com">
+  <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label>Name<input name="name" required autocomplete="name"></label>
+  <label>Email<input name="email" type="email" required autocomplete="email"></label>
+  <label>I'm interested in<select name="interest"><option>Early access</option><option>A demo</option><option>Something else</option></select></label>
+  <label>Message<textarea name="message" rows="3" required></textarea></label>
+  <button class="btn" type="submit">Send message →</button>
+  <p class="cstatus" id="cstatus" role="status"></p>
+</form>
+</div>
+</div></section>
+</main>
 
-        <a
-          href="#contact"
-          class="inline-flex items-center justify-center rounded-xl2 px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
-        >
-          Get started
-        </a>
+<footer><div class="wrap" style="align-items:center"><span>© 2026 ZenQuant.</span><div class="social" data-social></div><span class="legal"><a href="#risk">Risk Disclosure</a></span></div></footer>
+<script src="markets.js"></script>
+<script>
+(function(){
+  var dark=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;
+  var theme=dark?'dark':'light';
+  function widget(host,name,cfg){
+    var c=document.createElement('div');c.className='tradingview-widget-container';
+    c.innerHTML='<div class="tradingview-widget-container__widget"></div>';
+    var s=document.createElement('script');s.async=true;
+    s.src='https://s3.tradingview.com/external-embedding/embed-widget-'+name+'.js';
+    s.textContent=JSON.stringify(cfg);c.appendChild(s);host.appendChild(c);
+  }
+  // Company social profiles (one list, rendered in contact panel and footer)
+  var SOCIAL=[
+    {name:'LinkedIn',url:'https://www.linkedin.com/company/106712615/',icon:'<path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/>'},
+    {name:'Instagram',url:'https://www.instagram.com/zenquantventures/',icon:'<rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>'},
+    {name:'Facebook',url:'https://www.facebook.com/profile.php?id=61590054542589',icon:'<path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.24-1.46 1.5-1.46h1.6V4.46A21 21 0 0 0 14.3 4.3c-2.3 0-3.8 1.4-3.8 3.96v2.24H8v3h2.5V21z"/>'}
+    ,{name:'Telegram',url:'https://t.me/Neeraj240',icon:'<path fill="currentColor" d="M21.5 4.3 2.9 11.5c-1 .4-1 1.6.1 1.9l4.6 1.4 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.5 4.9 3.6c.6.4 1.4.1 1.6-.6L22.9 5.6c.2-1-.6-1.7-1.4-1.3zM9.6 14.4l8.5-6.9-6.8 7.9-.3 3.1z"/>'}
+    ,{name:'YouTube',url:'https://www.youtube.com/@NeerajPriyadarshi',icon:'<path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.77-1.77C18.27 5 12 5 12 5s-6.27 0-7.83.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.77 1.77C5.73 19 12 19 12 19s6.27 0 7.83-.43a2.5 2.5 0 0 0 1.77-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/>'}
+  ];
+  document.querySelectorAll('[data-social]').forEach(function(host){
+    host.innerHTML=SOCIAL.map(function(s){
+      return '<a href="'+s.url+'" target="_blank" rel="noopener me" aria-label="ZenQuant on '+s.name+'" title="'+s.name+'"><svg viewBox="0 0 24 24" aria-hidden="true">'+s.icon+'</svg></a>';
+    }).join('');
+  });
 
-        <button
-          class="md:hidden inline-flex items-center justify-center rounded-xl2 px-3 py-2 bg-white border border-zq-line"
-          aria-label="Open menu"
-          onclick="toggleMobileNav()"
-        >
-          <span class="text-sm font-semibold">Menu</span>
-        </button>
-      </div>
-    </div>
+  // Social showcase: platform cards (reuse SOCIAL icons) + click-to-play YouTube Short
+  var FEED={
+    Instagram:{handle:'@zenquantventures',text:'Reels and carousels on market numbers.',cta:'Follow on Instagram'},
+    YouTube:{handle:'@NeerajPriyadarshi',text:'Shorts breaking down results in under a minute.',cta:'Subscribe on YouTube'},
+    LinkedIn:{handle:'ZenQuant',text:'Reels and updates for investors and professionals.',cta:'Follow on LinkedIn'},
+    Facebook:{handle:'ZenQuant',text:'Reels and carousels, shared on our page.',cta:'Follow on Facebook'},
+    Telegram:{handle:'@Neeraj240',text:'Message us directly for early access or a demo.',cta:'Open Telegram'}
+  };
+  document.getElementById('plats').innerHTML=SOCIAL.filter(function(s){return FEED[s.name]&&s.name!=='Telegram'}).map(function(s){
+    var f=FEED[s.name];
+    return '<a class="card plat" href="'+s.url+'" target="_blank" rel="noopener"><span class="pi"><svg viewBox="0 0 24 24" aria-hidden="true">'+s.icon+'</svg></span>'+
+      '<span><b>'+s.name+'</b><br><span class="h">'+f.handle+'</span></span><p>'+f.text+'</p><span class="go">'+f.cta+' →</span></a>';
+  }).join('');
+  var yt=document.getElementById('yt');
+  yt.addEventListener('click',function(){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+yt.dataset.id+'?autoplay=1&rel=0&playsinline=1';
+    f.title=yt.getAttribute('aria-label').replace('Play: ','');
+    f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
+    yt.replaceWith(f);
+  });
 
-    <!-- Mobile nav -->
-    <div id="mobileNav" class="md:hidden hidden border-t border-zq-line bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-4 grid gap-3 text-sm text-zq-muted">
-        <a class="hover:text-zq-blue" href="#approach" onclick="toggleMobileNav()">Approach</a>
-        <a class="hover:text-zq-blue" href="#risk" onclick="toggleMobileNav()">Risk</a>
-        <a class="hover:text-zq-blue" href="#contact" onclick="toggleMobileNav()">Contact</a>
-        <a class="hover:text-zq-blue" href="mailto:hello@zenquantllp.com" onclick="toggleMobileNav()">Email</a>
-      </div>
-    </div>
-  </header>
+  // Mobile menu
+  var mb=document.getElementById('menuBtn'),mn=document.getElementById('mnav');
+  mb.addEventListener('click',function(){var o=mn.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Close menu':'Open menu')});
+  mn.addEventListener('click',function(e){if(e.target.tagName==='A'){mn.classList.remove('open');mb.setAttribute('aria-expanded','false')}});
 
-  <!-- Hero -->
-  <main class="mx-auto max-w-6xl px-4">
-    <section class="pt-16 pb-10 sm:pt-24 sm:pb-14">
-      <h1 class="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.05]">
-        Zen in Mind.<br class="hidden sm:block" />
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-zq-blue to-zq-blue2">Quant in Action.</span>
-      </h1>
+  // Contact form -> Web3Forms (forwards to the inbox registered with the access key)
+  var form=document.getElementById('cform'),status=document.getElementById('cstatus');
+  // No Web3Forms key yet: swap the form for direct-message links so nothing silently fails.
+  if(form.access_key.value.indexOf('YOUR_')===0){
+    var alt=document.createElement('div');alt.className='cform';
+    alt.innerHTML='<p style="margin:0;color:#fff;font:600 18px/26px Instrument Sans,sans-serif">Message us directly</p>'+
+      '<p style="margin:0;color:#fff">For early access or a demo, send ZenQuant a message on Telegram, LinkedIn or Instagram.</p>'+
+      '<div style="display:flex;gap:12px;flex-wrap:wrap">'+
+      '<a class="btn" style="background:var(--gold);color:#0b1020" href="https://t.me/Neeraj240" target="_blank" rel="noopener">Message on Telegram →</a>'+
+      '<a class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.6)" href="https://www.linkedin.com/company/106712615/" target="_blank" rel="noopener">LinkedIn</a>'+
+      '<a class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.6)" href="https://ig.me/m/zenquantventures" target="_blank" rel="noopener">Instagram</a></div>';
+    form.replaceWith(alt);
+  } else
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){status.textContent='Please fill in your name, a valid email and a message.';return}
+    var btn=form.querySelector('button');btn.disabled=true;status.textContent='Sending…';
+    fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify(Object.fromEntries(new FormData(form)))})
+      .then(function(r){return r.json()}).then(function(j){
+        if(j.success){form.reset();status.textContent='Thanks, we’ll be in touch soon.'}
+        else status.textContent='Sorry, that didn’t send. Please try again.';
+      }).catch(function(){status.textContent='Sorry, that didn’t send. Please try again.'})
+      .finally(function(){btn.disabled=false});
+  });
 
-      <p class="mt-5 text-lg sm:text-xl text-zq-muted leading-relaxed max-w-3xl">
-        Data-driven, algorithmic investing with a risk-first approach.
-      </p>
-
-      <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a
-          href="mailto:hello@zenquantllp.com"
-          class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
-        >
-          Contact
-        </a>
-        <a
-          href="#approach"
-          class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
-        >
-          Our approach
-        </a>
-      </div>
-
-      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div class="rounded-xl2 bg-white border border-zq-line p-4">
-          <p class="text-xs text-zq-soft">Core</p>
-          <p class="mt-1 font-semibold">Algo + Quant</p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-4">
-          <p class="text-xs text-zq-soft">Input</p>
-          <p class="mt-1 font-semibold">Market data</p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-4">
-          <p class="text-xs text-zq-soft">Method</p>
-          <p class="mt-1 font-semibold">Systematic rules</p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-4">
-          <p class="text-xs text-zq-soft">Priority</p>
-          <p class="mt-1 font-semibold">Risk controls</p>
-        </div>
-      </div>
-
-      <p class="mt-6 text-xs text-zq-soft max-w-3xl">
-        Investing involves risk, including possible loss of principal. Past performance is not indicative of future results.
-      </p>
-    </section>
-
-    <!-- Approach (minimal) -->
-    <section id="approach" class="py-14 border-t border-zq-line">
-      <div class="max-w-3xl">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Approach</h2>
-        <p class="mt-3 text-zq-muted leading-relaxed">
-          Data → signals → portfolio → risk checks.
-        </p>
-      </div>
-
-      <div class="mt-8 grid lg:grid-cols-3 gap-4">
-        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
-          <h3 class="font-semibold">Research</h3>
-          <p class="mt-2 text-sm text-zq-muted">Tested rules, documented assumptions.</p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
-          <h3 class="font-semibold">Construction</h3>
-          <p class="mt-2 text-sm text-zq-muted">Diversification and sizing constraints.</p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
-          <h3 class="font-semibold">Monitoring</h3>
-          <p class="mt-2 text-sm text-zq-muted">Drift checks and scheduled rebalancing.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Risk (minimal) -->
-    <section id="risk" class="py-14 border-t border-zq-line">
-      <div class="max-w-3xl">
-        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Risk</h2>
-        <p class="mt-3 text-zq-muted leading-relaxed">
-          Markets change. Models can fail. We build guardrails and communicate risk clearly.
-        </p>
-      </div>
-
-      <div class="mt-8 grid lg:grid-cols-2 gap-4">
-        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
-          <h3 class="font-semibold">Controls</h3>
-          <p class="mt-2 text-sm text-zq-muted">
-            Exposure limits • diversification • monitoring.
-          </p>
-        </div>
-        <div class="rounded-xl2 bg-white border border-zq-line p-6 shadow-soft">
-          <h3 class="font-semibold">Disclosure</h3>
-          <p class="mt-2 text-sm text-zq-muted">
-            This site is informational and not financial advice.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact (minimal) -->
-    <section id="contact" class="py-14 border-t border-zq-line">
-      <div class="rounded-xl2 bg-white border border-zq-line p-8 shadow-soft flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Contact</h2>
-          <p class="mt-2 text-zq-muted">Email us for early access or a demo.</p>
-          <a class="mt-3 inline-flex text-zq-blue font-semibold hover:opacity-80" href="mailto:hello@zenquantllp.com">
-            hello@zenquantllp.com →
-          </a>
-        </div>
-
-        <div class="flex gap-3">
-          <a
-            href="mailto:hello@zenquantllp.com"
-            class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-zq-blue to-zq-blue2 hover:opacity-95 transition shadow-soft"
-          >
-            Email
-          </a>
-          <a
-            href="#"
-            class="inline-flex items-center justify-center rounded-xl2 px-5 py-3 text-sm font-semibold bg-white border border-zq-line hover:border-zq-blue/30 hover:text-zq-blue transition"
-            onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;"
-          >
-            Top
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="py-10 text-xs text-zq-soft">
-      <div class="border-t border-zq-line pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <p>© <span id="year"></span> ZenQuant.</p>
-        <div class="flex gap-4">
-          <a class="hover:text-zq-blue transition" href="#">Privacy</a>
-          <a class="hover:text-zq-blue transition" href="#">Terms</a>
-          <a class="hover:text-zq-blue transition" href="#">Risk Disclosure</a>
-        </div>
-      </div>
-    </footer>
-  </main>
-
-  <script>
-    function toggleMobileNav() {
-      document.getElementById("mobileNav").classList.toggle("hidden");
+  // Index cards and ticker strip from markets.json (written by fetch_markets.py)
+  function fmt(n){return n.toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2})}
+  function signed(n,suffix){return (n>0?'+':n<0?'−':'')+fmt(Math.abs(n))+(suffix||'')}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function dateLabel(d){return new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}
+  function ago(t){var h=(Date.now()-new Date(t))/36e5;return h<1?Math.max(1,Math.round(h*60))+' min ago':h<24?Math.round(h)+' h ago':new Date(t).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}
+  // 1-month trend line (inline SVG) for an index card
+  function spark(i){
+    var h=i.history||[];if(h.length<2)return '';
+    var v=h.map(function(p){return p.c}),lo=Math.min.apply(null,v),hi=Math.max.apply(null,v),W=300,H=56,pad=4;
+    var pts=v.map(function(c,k){return (k/(v.length-1)*W).toFixed(1)+','+(pad+(hi===lo?0.5:(hi-c)/(hi-lo))*(H-2*pad)).toFixed(1)});
+    var col=(i.monthPct==null?i.change:i.monthPct)>=0?'var(--positive)':'var(--negative)';
+    return '<svg class="spark" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" role="img" aria-label="'+esc(i.name)+' one-month trend">'+
+      '<polygon points="0,'+H+' '+pts.join(' ')+' '+W+','+H+'" style="fill:'+col+';opacity:.12"/>'+
+      '<polyline points="'+pts.join(' ')+'" style="fill:none;stroke:'+col+';stroke-width:2;vector-effect:non-scaling-stroke"/></svg>'+
+      '<div class="spark-cap"><span>'+dateLabel(h[0].d).replace(/ \d{4}$/,'')+'</span><span>1M '+(i.monthPct==null?'':signed(i.monthPct,'%'))+'</span><span>'+dateLabel(h[h.length-1].d).replace(/ \d{4}$/,'')+'</span></div>';
+  }
+  function hideMarkets(){
+    ['markets','tape','news'].forEach(function(id){var el=document.getElementById(id);if(el)el.style.display='none'});
+    var l=document.querySelector('.links a[href="#markets"]'),m=document.querySelector('.mnav a[href="#markets"]');
+    if(l)l.style.display='none';if(m)m.style.display='none';
+  }
+  (window.ZQ_MARKETS?Promise.resolve(window.ZQ_MARKETS):fetch('markets.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})).then(function(data){
+    var age=(Date.now()-new Date(data.updated).getTime())/36e5; // hours
+    if(!(age<96))return hideMarkets(); // never show data older than 4 days as current
+    var tape=[];
+    function moverList(title,cls,list){
+      return '<div><h4 class="'+cls+'">'+title+'</h4><ul class="mv">'+list.map(function(s){
+        return '<li><span class="sy">'+esc(s.symbol)+'</span><span class="pc '+(s.changePct>=0?'up':'dn')+'">'+signed(s.changePct,'%')+'</span>'+
+          '<span class="nm2" title="'+esc(s.name)+'">'+esc(s.name)+'</span><span class="cl">'+fmt(s.close)+'</span></li>';
+      }).join('')+'</ul></div>';
     }
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    data.markets.forEach(function(i){
+      var up=i.change>=0,cls=up?'up':'dn',arrow=up?'▲':'▼',b=i.breadth;
+      var card=document.createElement('div');card.className='card mcard';
+      card.innerHTML='<div class="mhead"><div><div class="eyebrow">'+esc(i.market)+'</div><h3>'+esc(i.name)+'</h3>'+
+          '<div class="asof">Close · '+dateLabel(i.date)+'</div></div>'+
+          '<span class="badge '+cls+'">'+arrow+' Market '+(up?'up':'down')+'</span></div>'+
+        '<div class="ix-price"><span class="v">'+fmt(i.close)+'</span><span class="c '+cls+'">'+signed(i.change)+' ('+signed(i.changePct,'%')+')</span></div>'+
+        '<div class="ix-row"><div><div class="k">Open</div><div class="n">'+fmt(i.open)+'</div></div>'+
+          '<div><div class="k">Close</div><div class="n">'+fmt(i.close)+'</div></div>'+
+          '<div><div class="k">Prev close</div><div class="n">'+fmt(i.prevClose)+'</div></div></div>'+
+        spark(i)+
+        '<div class="breadth" role="img" aria-label="'+b.up+' of '+b.total+' stocks up, '+b.down+' down">'+
+          '<div class="bbar"><span class="up-bg" style="width:'+(b.up/b.total*100)+'%"></span><span style="width:'+(b.unchanged/b.total*100)+'%;background:var(--line-strong)"></span><span class="dn-bg" style="width:'+(b.down/b.total*100)+'%"></span></div>'+
+          '<div class="bcap"><span class="up">▲ '+b.up+' up</span><span>'+b.total+' stocks</span><span class="dn">▼ '+b.down+' down</span></div></div>'+
+        '<div class="movers">'+moverList('Top gainers','up',i.gainers)+moverList('Top losers','dn',i.losers)+'</div>';
+      document.getElementById('mk-'+i.region).appendChild(card);
+      tape.push('<span><b>'+esc(i.name)+'</b>'+fmt(i.close)+' <span class="'+cls+'">'+arrow+' '+signed(i.changePct,'%')+'</span></span>');
+    });
+    document.getElementById('tape').innerHTML='<div class="tape-in">'+tape.join('')+'</div>';
+    // India headlines (collected by fetch_markets.py)
+    var ni=document.getElementById('news-in'),items=(data.news&&data.news.items)||[];
+    ni.innerHTML=items.map(function(n){
+      return '<li><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a><div class="meta">'+esc(n.source)+' · '+ago(n.time)+'</div></li>';
+    }).join('');
+    document.getElementById('news-in-note').textContent=items.length?'Headlines via Google News.':'No recent headlines.';
+    document.getElementById('mk-note').textContent='Source: NSE (NIFTY 50 index and bhavcopy) and Nasdaq (Nasdaq-100 and its members), official end-of-day data, updated '+
+      new Date(data.updated).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})+'. Not real time; informational only, not investment advice.';
+  }).catch(hideMarkets);
+  widget(document.getElementById('news-global'),'timeline',{feedMode:'market',market:'stock',displayMode:'regular',isTransparent:true,colorTheme:theme,locale:'en',width:'100%',height:460});
+})();
+</script>
 </body>
 </html>
-
