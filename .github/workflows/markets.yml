@@ -29,14 +29,3 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add markets.json markets.js
           git diff --cached --quiet || { git commit -m "Refresh market data" && git push; }
-      - name: Telegram alert on failure
-        if: failure()
-        env:
-          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
-          if [ -z "$TG_TOKEN" ] || [ -z "$TG_CHAT" ]; then echo "Telegram secrets not set; skipping alert"; exit 0; fi
-          curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" \
-            --data-urlencode "chat_id=${TG_CHAT}" \
-            --data-urlencode "text=⚠️ ZenQuant site: market data refresh failed. The site keeps the last good data; sections hide after 4 days without an update. Details: ${RUN_URL}" > /dev/null
