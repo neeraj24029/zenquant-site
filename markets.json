@@ -1,23 +1,19 @@
 {
-  "updated": "2026-11-23T08:03+00:00",
+  "updated": "2026-11-24T11:31+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
       "name": "NIFTY 50",
       "market": "NSE · India",
       "currency": "INR",
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "status": "closed",
-      "open": 25368.0,
-      "close": 25800.6,
-      "prevClose": 25514.3,
-      "change": 286.3,
-      "changePct": 1.12,
+      "open": 25929.15,
+      "close": 25349.65,
+      "prevClose": 25800.6,
+      "change": -450.95,
+      "changePct": -1.75,
       "history": [
-        {
-          "d": "2026-10-21",
-          "c": 22811.35
-        },
         {
           "d": "2026-10-22",
           "c": 22687.65
@@ -101,76 +97,80 @@
         {
           "d": "2026-11-20",
           "c": 25800.6
+        },
+        {
+          "d": "2026-11-23",
+          "c": 25349.65
         }
       ],
-      "monthPct": 13.1,
+      "monthPct": 11.73,
       "gainers": [
         {
-          "symbol": "APOLLOHOSP",
-          "name": "Apollo Hospitals Enterprise",
-          "close": 9200.0,
-          "changePct": 5.29
+          "symbol": "TCS",
+          "name": "Tata Consultancy Services",
+          "close": 2460.0,
+          "changePct": 3.53
         },
         {
-          "symbol": "AXISBANK",
-          "name": "Axis Bank",
-          "close": 1446.0,
-          "changePct": 4.72
+          "symbol": "SHRIRAMFIN",
+          "name": "Shriram Finance",
+          "close": 995.9,
+          "changePct": 2.46
         },
         {
-          "symbol": "MAXHEALTH",
-          "name": "Max Healthcare Institute",
-          "close": 1081.0,
-          "changePct": 3.88
+          "symbol": "TECHM",
+          "name": "Tech Mahindra",
+          "close": 1777.5,
+          "changePct": 1.79
         },
         {
-          "symbol": "MARUTI",
-          "name": "Maruti Suzuki India",
-          "close": 14011.0,
-          "changePct": 3.11
+          "symbol": "HCLTECH",
+          "name": "HCL Technologies",
+          "close": 1364.3,
+          "changePct": 1.48
         },
         {
-          "symbol": "ULTRACEMCO",
-          "name": "UltraTech Cement",
-          "close": 12939.0,
-          "changePct": 3.02
+          "symbol": "TITAN",
+          "name": "Titan Company",
+          "close": 4680.0,
+          "changePct": 1.3
         }
       ],
       "losers": [
         {
-          "symbol": "TITAN",
-          "name": "Titan Company",
-          "close": 4620.0,
-          "changePct": -1.7
-        },
-        {
           "symbol": "TATASTEEL",
           "name": "Tata Steel",
-          "close": 178.0,
-          "changePct": -1.6
+          "close": 163.0,
+          "changePct": -8.43
         },
         {
-          "symbol": "NTPC",
-          "name": "NTPC",
-          "close": 321.5,
-          "changePct": -1.08
+          "symbol": "AXISBANK",
+          "name": "Axis Bank",
+          "close": 1388.6,
+          "changePct": -3.97
         },
         {
-          "symbol": "HINDUNILVR",
-          "name": "Hindustan Unilever",
-          "close": 2052.5,
-          "changePct": -1.05
+          "symbol": "HDFCBANK",
+          "name": "HDFC Bank",
+          "close": 817.8,
+          "changePct": -3.33
         },
         {
-          "symbol": "JIOFIN",
-          "name": "Jio Financial Services",
-          "close": 224.97,
-          "changePct": -0.81
+          "symbol": "ICICIBANK",
+          "name": "ICICI Bank",
+          "close": 1585.5,
+          "changePct": -3.32
+        },
+        {
+          "symbol": "HINDALCO",
+          "name": "Hindalco Industries",
+          "close": 900.45,
+          "changePct": -3.13
         }
       ],
       "breadth": {
-        "up": 32,
-        "down": 18,
+        "up": 11,
+        "down": 39,
         "unchanged": 0,
         "total": 50
       },
@@ -180,18 +180,14 @@
       "name": "Nasdaq-100",
       "market": "Nasdaq · US",
       "currency": "USD",
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "status": "closed",
-      "open": 26184.76,
-      "close": 25028.98,
-      "prevClose": 26517.05,
-      "change": -1488.07,
-      "changePct": -5.61,
+      "open": 26889.29,
+      "close": 26746.1,
+      "prevClose": 25028.98,
+      "change": 1717.12,
+      "changePct": 6.86,
       "history": [
-        {
-          "d": "2026-10-22",
-          "c": 28958.69
-        },
         {
           "d": "2026-10-23",
           "c": 28957.53
@@ -275,78 +271,82 @@
         {
           "d": "2026-11-20",
           "c": 25028.98
+        },
+        {
+          "d": "2026-11-23",
+          "c": 26746.1
         }
       ],
-      "monthPct": -13.57,
+      "monthPct": -7.64,
       "gainers": [
         {
-          "symbol": "TMUS",
-          "name": "T-Mobile US, Inc.",
-          "close": 165.6,
-          "changePct": 1.89
+          "symbol": "ROP",
+          "name": "Roper Technologies, Inc.",
+          "close": 487.0777,
+          "changePct": 6.32
         },
         {
-          "symbol": "WMT",
-          "name": "Walmart Inc.",
-          "close": 127.95,
-          "changePct": 1.52
+          "symbol": "GEHC",
+          "name": "GE HealthCare Technologies Inc.",
+          "close": 83.8762,
+          "changePct": 3.16
         },
         {
-          "symbol": "KDP",
-          "name": "Keurig Dr Pepper Inc.",
-          "close": 34.84,
-          "changePct": 1.25
+          "symbol": "GILD",
+          "name": "Gilead Sciences, Inc.",
+          "close": 173.01,
+          "changePct": 1.42
         },
         {
-          "symbol": "PEP",
-          "name": "PepsiCo, Inc.",
-          "close": 140.54,
-          "changePct": 1.11
+          "symbol": "CDNS",
+          "name": "Cadence Design Systems, Inc.",
+          "close": 308.4552,
+          "changePct": 1.42
         },
         {
-          "symbol": "PAYX",
-          "name": "Paychex, Inc.",
-          "close": 112.63,
-          "changePct": 1.1
+          "symbol": "COST",
+          "name": "Costco Wholesale Corporation",
+          "close": 1078.98,
+          "changePct": 1.04
         }
       ],
       "losers": [
         {
-          "symbol": "NBIS",
-          "name": "Nebius Group N.V.",
-          "close": 81.31,
-          "changePct": -16.11
+          "symbol": "MU",
+          "name": "Micron Technology, Inc.",
+          "close": 658.85,
+          "changePct": -6.9
         },
         {
-          "symbol": "SNDK",
-          "name": "Sandisk Corporation",
-          "close": 79.24,
-          "changePct": -16.05
+          "symbol": "INTC",
+          "name": "Intel Corporation",
+          "close": 55.69,
+          "changePct": -6.65
+        },
+        {
+          "symbol": "NBIS",
+          "name": "Nebius Group N.V.",
+          "close": 92.0,
+          "changePct": -5.93
         },
         {
           "symbol": "ALAB",
           "name": "Astera Labs, Inc.",
-          "close": 180.35,
-          "changePct": -14.77
+          "close": 209.7,
+          "changePct": -5.59
         },
         {
-          "symbol": "ARM",
-          "name": "Arm Holdings plc",
-          "close": 152.2,
-          "changePct": -14.09
-        },
-        {
-          "symbol": "LITE",
-          "name": "Lumentum Holdings Inc.",
-          "close": 460.54,
-          "changePct": -13.94
+          "symbol": "CRWV",
+          "name": "CoreWeave, Inc.",
+          "close": 45.66,
+          "changePct": -5.52
         }
       ],
       "breadth": {
-        "up": 19,
-        "down": 82,
+        "up": 35,
+        "down": 62,
         "unchanged": 0,
-        "total": 101
+        "total": 97
       },
       "region": "US"
     }
@@ -355,40 +355,40 @@
     "source": "Google News",
     "items": [
       {
-        "title": "Sensex Slides 1,041 Points, Nifty Dips Below 25,500 on Metal, Bank Stock Drag",
-        "source": "FlipItMoney",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaVpkQlRQcWUyakQxX180ckFsZ0pUU3I2X1pBU2hPcUxlSHZSSmVtVEFyZkFHMk9IZWJmb0xDak1kaXNqMUwxeUFiTmhMWnJxT2lwYUYyT3dDUnNQZDZFNFQ5VzJSN3d1ekhLMWZGVElUM2Zfczl4VG4wUDE0cXZRR3hVenR5RUZDb05WRExHaVZKTHktRW52NUxzdXh6MUxPZWc?oc=5",
-        "time": "2026-11-23T07:56+00:00"
+        "title": "Sensex Today Tanks 1,484 Points | Nifty Below 25,350 | 4 Reasons Why Indian Share Markets Are Falling",
+        "source": "Equitymaster",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOR2NzQkc5LXB3TzFwb1N0X2ZxcWdYSjhZT3hIVDBLMVVqeVVGb1dnNUdpRzR2OHA4T0VNWTdPbE9UOWNBcC1pTjUtNHpnMzhteW1WY1VZcUIwRlhOLWJWTGtsR3dZcEF6VmdXbjhJUzVpbXloOFNiTEt5bkNVQmp3a2JrWkJVMklqSG1HOHI1QjNZdzdLVkhHWWIwTk12WlZCc0FfbDRpMVRTSEJWYzRvTUNiUVNiQldFaEp3dW40TFU0dlFXb3I1MGtodTVGNWZ0Z2Z2dWJ4dXJva0V4MVJsYl95Mk11dlI4eE9DaGdiYw?oc=5",
+        "time": "2026-11-24T11:28+00:00"
       },
       {
-        "title": "Bharti Airtel to Apollo Hospitals: 7 NIFTY100 stocks hit 52-week high despite stock market fall",
-        "source": "Upstox",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPVmdubUR1bnZnNEUyeWM3NUYxSk45VUkySVk0c1FiSFRuMlRzb3UwZ1RVTHhUOGxreGNKc1BHSkxVUUtDWVhaSXNla2FxR09RRG1XZXFRNnI1MmZfYUF5MUEtRHJJTXUzOFJxci1MSFhubmZaeFU2VG9GRkxmRDdGM2tOSmxPb2ctZFRXZUdlTy1XLU5VYUdNQ3RLMU1qOURCTmVJY0REcjFXYko1QXFrME9qVEVjUExIbFRLaXJDUnRBVk5JWExGZEhFWFA3cjB4eXZpZDBGaXNsOTRYRnlMT2xtZ2dNMXNiNGc?oc=5",
-        "time": "2026-11-23T07:53+00:00"
-      },
-      {
-        "title": "Sterlite Tech, HFCL extend fall; slip up to 41% from October highs",
-        "source": "Business Standard",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRVdSRHYzbHJLdUdMeDA0cU9MMTh5SUFGUkNaejBhaEJJblVGeXFfc1Ywby1lNGFGVUZHeHh6VkVlTDZ3MGtjUGltcjJDUF9JMS1kX085dkhBVUVPeVVaa0lwYVlLZmZXMVpDNjhGaThDWGdHUi1WM0syLUloRFN0X0NTXzJCVzhUZmxIcDJBWlB2MnlnNVZ4QXNCZTJkbHpuNG1WOWk4T3pZVU5IUnJQQ0JTY2w3UEhlYm9IN3U5TDQ3cXRrbWd1M2Rn0gHPAUFVX3lxTE5xV19CYkxlQzRTc2t5X0p1WU9oMkZCSFJ2LUZqbGtxVDFzeUsyZHI4a19TZkh3VThjd3dRZktNN1dOcnljVTl5NGtfcTc1cldQeXBoZkZycUdaZTFlbXpjRWlxUVlaT1oxWDRVQzZYN2dBb3RhbURsS3R3dkdTTk1LU2JaeXlJSWpmWUpsN2FaelVCX1dSb3BwQ1VBQ0puVXhfQVhpR25CT1UxbFB1cjB1UC1mbnBYRjRfQUJkU3BFYS1CeTNsejZKejNtUlRFdw?oc=5",
-        "time": "2026-11-23T07:47+00:00"
-      },
-      {
-        "title": "Stock Market Holiday: Are BSE, NSE closed on November 24 for Guru Nanak Jayanti?",
-        "source": "The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQT3VTdHRoeXhoN0JJYTJLTjFVLW9qNElGZkRFY3EwNjRrX1BGdkJLYzdmZXB2RFpTTVBQUGNOenhCNENFSWhFVHpTUEU2VXI2bkZSU0EyQm85bUFpMlY0R21MLU1NYlBDTHpoZXlfX0xxb0UxLXRQYkRXTGpHbWhWWlpBRXEtSDVTdnV0VkxxMmNKYlNSX2s0OUZCVUlERlhGaFVIX1NPX2gzdVpXdTJhMWZRcWxVNzBkcWhKREswRjdMcXVJRUJIVkE5WmNkUmNKeTdzS0ZBUGs4ZjV1ZnZYMmxHdThud9IB6wFBVV95cUxNSmFPSnVYUlZXM0stSVhVZUJYQVROVzZPTm50VXZ3VFlNTmtfdDNCeWYxN0dTVzlfVWkyVTRVMzJHTllYM3RKVHVsNnNiQ3JlejZyckJlX3YyOUROc3k5c0lrWVJUNWRPU2M3N1JBVEthbUpVa3F3ZVJlNk5hXzNqUVltb2tCN1NMSkN4TEEzUjlMSUhNbXY4dkd1OHhCU1FCWWJGdFNyX01VbngwemF5MjloeWhOdEowNmt0M3BNclMwOTEzSzJFRHBoMjYxM1VIcHZLcTBvbVlPTWd3LTNPd0oxMjZ3MklQUlRV?oc=5",
-        "time": "2026-11-23T07:43+00:00"
-      },
-      {
-        "title": "Dalal Street under pressure: Sensex drops 1,800 points from day's high, Nifty Bank crashes 2.18%",
-        "source": "Zee Business",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRzJBV1R0TmtNbEFQRHFkeHltdFdBM0xDUGdYQUNoczJqb2tlREpqY2xwMUNzTGVxYkpNLXVIRTdtZ28tYTg1cmJDYVU0R3VLRmg4dXA0X0FfRTNtR0hPM1FLaU00bXBXSTRDNzJmYV9PZkFGNkx5SzE3ZlJzTFBuVUduamQ3dTF5NHRpLXVfRS1ueVJmZUkzc2hpRjVNOEF5Z0YxSUpEQllQbEpvUkVlcDJCM1oyT1dwM05hRndSVlA1QjMxV05ldFctdkI3ZDdsNGRF?oc=5",
-        "time": "2026-11-23T07:42+00:00"
-      },
-      {
-        "title": "Sensex crashes 1,800 pts from day's high, Nifty below 25,500: Profit booking among key reasons behind...",
+        "title": "Chartist Talk: Nifty 50 to trade range-bound before scaling a new high in December series? Ashish Kyal...",
         "source": "Moneycontrol.com",
-        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNRFRXcmptRWprS2FlamlpelBIblhtWlRhQjZkaHpkSllxVzlDTlBnUldpUnIwa3psakd5YXlaV0hLelZoNnZvclF2TnhGOGlYaUszQWU4aGZEMzhsckdaZGN4V2RBTXdMQ1d2amNTdVZvaU9PM1RsMFVWOW9OR01IOVZzUjZaTmpDdl9BcXh0azk2SkptQWFybmxyOFA2TDJUUDNoaUI2ZXJQYTBrTVVTQkpNUGRIbXltYUdJeXF6ak4ycWNnTDNoeXhlRVFyU3YyNlFlc3BoWXJ2NG95cE11cDh0d2FlOVdXS2FVTzFaSks5NWdYeGZzYldPR05hUEIwN25CUkNWc9IBjAJBVV95cUxQNks1SmJJd3hkaGNNNTlTaWJDUjB6TG9MNkF2YWE5MlNlTUFSZlhBUDBaWmg0NXJ1ZmxubVNWZFljdTFFWUQ4c1pGZUctX2NMZk9Sd2Q0UW5qcllQZmpPSmRXdjUyN3ZtejFwZXg0TWg3Y29qckhCYXlsb3duUHFvWnEwTW9fX2dGLTgyTE90QjVxZlpwSThBZ3BDMlVub0pSQklhdkp0b0QtdVZHSmRHQWFMMDViSmdBOU85ZFhTelhqQ1JFOWllOTZVcUotY2t2dTREaUJpaGRQS29yd0VCakVZN21jVlRPUXRvYllaSDhVcDF3UUxlclNWZ1lmd2F3aEEyM2kzdV9DSlZR?oc=5",
-        "time": "2026-11-23T07:36+00:00"
+        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOalNPNERyaHRMRTJYQ3BKTy1YZFpEMDc3TzNhWWpKZU1jUERhYlZLV3d6Nzk5a1BLRW5sNW1fem51ZGpGRTZhWFdvZmRTa2cyNThzbEVTY0I2NjAtZmFLSS04SGVucDRhbVlpZHJUR2IxSmViaU9yYXpuWnRZNGVvS3FPZnd6akxCbjdiYmlPT280NHFjRThLV0N4WE9wbGFGN3J3bDhUWW9CQ3o5LUZzYkxWSENrU0xHYjF3Zzk1SEd0d3VGb0Z2bGM4ODk1QVBZWWVaS0FEMmRXNEtNa3JTX1BreXJuZDZiSkVUeGdOaVpualY2eTVUQjNCblV3LWVEYjdCRlVTb0NrT2FtNkVDYmpzQUlaOE3SAZwCQVVfeXFMT1NacGVsZEFTTGdHU1Jta2ptTTd1T0RlbG1pQ1AySmlkdDdPXzY3aVM1ajlHOHNoS2tfT0dRQnZZMnZpWC1XYzA2Nnh1VXdaVnpwQVJWT1UxOE56RTBWM2FhRlQwdzV3VDBNUmF1NjBKaW1BUm1Zd2tFRzBZYXZ2ZnRBXzg5QUxVX3V4YTg2ODhMZHRMd0ljOUpkc2FkeWlrbzRxT1NHeUdOQlhtSlZ0VjFXTU5nTG9KbkNPZ2VGbkJ1Z2ZOVndkb3Z4SlhCM1VRS3Bfd0lvMmJ6YjFSSDAzT3IzeWtPUG1IUFNiT2xYbmJpZUpvRGF5a01Zb3RkZVRQcDhFNG1laUZBYzVxa0g5NC1VTDd4X0R0b29RVnM?oc=5",
+        "time": "2026-11-24T11:01+00:00"
+      },
+      {
+        "title": "Sensex and Nifty Slip Sharply as Metal Sector Drags Market Down",
+        "source": "MarketsMojo",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZjdiNHpzX0hxemI2UjdBUVZIQTFKa3Zkc2NmYzhmRnA5SU82aFpFZHowMkhTajMwdGFMLWl0amhpWGpnR3daRDFNNkdiSkVHU2dqSDMzYzFXdmJ4aE1UMmZFSzlUazBPb1ZNQlFLUU5aaUNlTDdHalpRbGoxZnczU3RzNkhOWHhwV05jX2FSR2JuOEtvUWNHVVNvX1RINDZmUTdqeUZzaXdTMV9vQ0R1RnhRVlktUTVWVWg3UDZXNA?oc=5",
+        "time": "2026-11-24T09:36+00:00"
+      },
+      {
+        "title": "Milky Mist Dairy Food Limited Share Price",
+        "source": "Upstox",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXZXgtZjU3dWl1RnQ3TDhTSmUySkl2V0tHSFdYRUx3VDM2UmtNbnlRMEZueEJlRDNYZV9qd3dhODZ6YlVMWDcwZkpwdkVVcXlMZENPMUlNUzZQSjNlMEFJRnhjc3V3YTlyczhOaDRSVQ?oc=5",
+        "time": "2026-11-24T09:14+00:00"
+      },
+      {
+        "title": "Nifty 22000 PE 01 DEC 2026: Option Premium, OI & Price",
+        "source": "Kotak Neo",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd0l5bnVXNzF4VGFOTHRyMDI1aVZqd0JneXpwbTJXYXp2SHZPYXZVMkI3TlZLOFZVaGtkYjVNTzItWDd3dVRHNEVmUG9nd2lEdGFabG5SYndDRTVFU1NWN0tMcHVCWFJmdUF5SXVKOXJBUml3eDlFVFdhaWVlS0tBZEJuMA?oc=5",
+        "time": "2026-11-24T08:14+00:00"
+      },
+      {
+        "title": "Investors become richer by ₹34.61 trillion as Sensex surges in November",
+        "source": "Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQ25DV2JacnN4enBUaHZCS21JZEZidFRhZ0puMGpiVUFkdHlZbWstWHlTUlUxSVc5eThPUmtPYVBtVVJrMUxaenhsZVpQQkpQTGZNNkJ2TDdqQXZCVjROaE15RFBqNnRvdDF0bzRKazVBdUZESENTZjNtQWZhN2FRY1lMMjZTZkM5c0RZbEhfWDVGdU11M21FZkZXY3NLbEdBX25hVG15bDE0TFJfNXV6UkdGdTYtSThFdzU5bGExejhvYmI1cl9EQW9JQWZBLTRGRzE40gHYAUFVX3lxTFBxaHRZdjl3LVJNWGdJT1NBd0hGTll0TmYxMURRNE5LVHFyYmg0UkYxSEFZVzJSZFNhdm5UX0dqR3N0NUJiNWxRVDdkVWdzZDF0M3FaOVlGTWlGVXpmc3A0UExPdEJOME1BX1hxTUQ1U01nUHpKR2RYUzlBbFg0U25VRVI5UDdfRXB4blJNOUVaRkJqWlNyWDBFZmc1YldLMWgwSmFKZUNyLUo2VnFGbHpRVWw1QnRDNXNYSXpYczNyRHllc1p3bkZKUjVxYlJONGtZbHFRa1RGaA?oc=5",
+        "time": "2026-11-24T08:10+00:00"
       }
     ]
   }
