@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T11:31+00:00",
+  "updated": "2026-11-25T10:18+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
@@ -180,18 +180,14 @@
       "name": "Nasdaq-100",
       "market": "Nasdaq · US",
       "currency": "USD",
-      "date": "2026-11-23",
+      "date": "2026-11-24",
       "status": "closed",
-      "open": 26889.29,
-      "close": 26746.1,
-      "prevClose": 25028.98,
-      "change": 1717.12,
-      "changePct": 6.86,
+      "open": 26298.14,
+      "close": 26214.17,
+      "prevClose": 26746.1,
+      "change": -531.93,
+      "changePct": -1.99,
       "history": [
-        {
-          "d": "2026-10-23",
-          "c": 28957.53
-        },
         {
           "d": "2026-10-26",
           "c": 29273.4
@@ -275,78 +271,82 @@
         {
           "d": "2026-11-23",
           "c": 26746.1
+        },
+        {
+          "d": "2026-11-24",
+          "c": 26214.17
         }
       ],
-      "monthPct": -7.64,
+      "monthPct": -10.45,
       "gainers": [
         {
-          "symbol": "ROP",
-          "name": "Roper Technologies, Inc.",
-          "close": 487.0777,
-          "changePct": 6.32
+          "symbol": "KDP",
+          "name": "Keurig Dr Pepper Inc.",
+          "close": 36.18,
+          "changePct": 1.06
         },
         {
-          "symbol": "GEHC",
-          "name": "GE HealthCare Technologies Inc.",
-          "close": 83.8762,
-          "changePct": 3.16
+          "symbol": "CMCSA",
+          "name": "Comcast Corporation",
+          "close": 25.6242,
+          "changePct": 0.96
         },
         {
-          "symbol": "GILD",
-          "name": "Gilead Sciences, Inc.",
-          "close": 173.01,
-          "changePct": 1.42
+          "symbol": "AEP",
+          "name": "American Electric Power Company, Inc.",
+          "close": 128.525,
+          "changePct": 0.96
         },
         {
-          "symbol": "CDNS",
-          "name": "Cadence Design Systems, Inc.",
-          "close": 308.4552,
-          "changePct": 1.42
+          "symbol": "PEP",
+          "name": "PepsiCo, Inc.",
+          "close": 144.02,
+          "changePct": 0.94
         },
         {
-          "symbol": "COST",
-          "name": "Costco Wholesale Corporation",
-          "close": 1078.98,
-          "changePct": 1.04
+          "symbol": "VRTX",
+          "name": "Vertex Pharmaceuticals Incorporated",
+          "close": 569.06,
+          "changePct": 0.91
         }
       ],
       "losers": [
         {
-          "symbol": "MU",
-          "name": "Micron Technology, Inc.",
-          "close": 658.85,
-          "changePct": -6.9
+          "symbol": "WDAY",
+          "name": "Workday, Inc.",
+          "close": 161.89,
+          "changePct": -9.67
         },
         {
-          "symbol": "INTC",
-          "name": "Intel Corporation",
-          "close": 55.69,
-          "changePct": -6.65
+          "symbol": "IDXX",
+          "name": "IDEXX Laboratories, Inc.",
+          "close": 652.4352,
+          "changePct": -8.38
+        },
+        {
+          "symbol": "SNDK",
+          "name": "Sandisk Corporation",
+          "close": 72.8389,
+          "changePct": -6.56
         },
         {
           "symbol": "NBIS",
           "name": "Nebius Group N.V.",
-          "close": 92.0,
-          "changePct": -5.93
+          "close": 81.94,
+          "changePct": -6.15
         },
         {
-          "symbol": "ALAB",
-          "name": "Astera Labs, Inc.",
-          "close": 209.7,
-          "changePct": -5.59
-        },
-        {
-          "symbol": "CRWV",
-          "name": "CoreWeave, Inc.",
-          "close": 45.66,
-          "changePct": -5.52
+          "symbol": "MU",
+          "name": "Micron Technology, Inc.",
+          "close": 591.71,
+          "changePct": -6.05
         }
       ],
       "breadth": {
-        "up": 35,
-        "down": 62,
+        "up": 15,
+        "down": 86,
         "unchanged": 0,
-        "total": 97
+        "total": 101
       },
       "region": "US"
     }
@@ -355,40 +355,40 @@
     "source": "Google News",
     "items": [
       {
-        "title": "Sensex Today Tanks 1,484 Points | Nifty Below 25,350 | 4 Reasons Why Indian Share Markets Are Falling",
-        "source": "Equitymaster",
-        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOR2NzQkc5LXB3TzFwb1N0X2ZxcWdYSjhZT3hIVDBLMVVqeVVGb1dnNUdpRzR2OHA4T0VNWTdPbE9UOWNBcC1pTjUtNHpnMzhteW1WY1VZcUIwRlhOLWJWTGtsR3dZcEF6VmdXbjhJUzVpbXloOFNiTEt5bkNVQmp3a2JrWkJVMklqSG1HOHI1QjNZdzdLVkhHWWIwTk12WlZCc0FfbDRpMVRTSEJWYzRvTUNiUVNiQldFaEp3dW40TFU0dlFXb3I1MGtodTVGNWZ0Z2Z2dWJ4dXJva0V4MVJsYl95Mk11dlI4eE9DaGdiYw?oc=5",
-        "time": "2026-11-24T11:28+00:00"
+        "title": "NSE market cap crosses Rs 5.76 lakh crore, shares rally over 27% in two months, 9th most valued company",
+        "source": "ANI News",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZDF1Q3NGU2huQ095S3UyWVJmUXpreGx4MUdkTHpHSzJDOFBhV3IwVHJicXhYSF9tMGhiSzJDNUlFUlBhREpsMm52R3JsTkRZckhEa1BzQUk5NnNxbGJFWkNFeWlOV1dSZ3NCbmlueTYtUmxsWjlJQzFsR0FvcVpfb3pPc3BDTDBMeng2UlJWVHpUX3hoMkJITXc1OUpxYzlNcWYwNVF5N29ETEtObTFaTVdDSEVQbmhoZFJOb19wMG9sMWcwTzZaYjN1RGp3OVl2Z1h2SXdHSEZQcWVHWG5BeDhPcHQ?oc=5",
+        "time": "2026-11-25T10:12+00:00"
       },
       {
-        "title": "Chartist Talk: Nifty 50 to trade range-bound before scaling a new high in December series? Ashish Kyal...",
-        "source": "Moneycontrol.com",
-        "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOalNPNERyaHRMRTJYQ3BKTy1YZFpEMDc3TzNhWWpKZU1jUERhYlZLV3d6Nzk5a1BLRW5sNW1fem51ZGpGRTZhWFdvZmRTa2cyNThzbEVTY0I2NjAtZmFLSS04SGVucDRhbVlpZHJUR2IxSmViaU9yYXpuWnRZNGVvS3FPZnd6akxCbjdiYmlPT280NHFjRThLV0N4WE9wbGFGN3J3bDhUWW9CQ3o5LUZzYkxWSENrU0xHYjF3Zzk1SEd0d3VGb0Z2bGM4ODk1QVBZWWVaS0FEMmRXNEtNa3JTX1BreXJuZDZiSkVUeGdOaVpualY2eTVUQjNCblV3LWVEYjdCRlVTb0NrT2FtNkVDYmpzQUlaOE3SAZwCQVVfeXFMT1NacGVsZEFTTGdHU1Jta2ptTTd1T0RlbG1pQ1AySmlkdDdPXzY3aVM1ajlHOHNoS2tfT0dRQnZZMnZpWC1XYzA2Nnh1VXdaVnpwQVJWT1UxOE56RTBWM2FhRlQwdzV3VDBNUmF1NjBKaW1BUm1Zd2tFRzBZYXZ2ZnRBXzg5QUxVX3V4YTg2ODhMZHRMd0ljOUpkc2FkeWlrbzRxT1NHeUdOQlhtSlZ0VjFXTU5nTG9KbkNPZ2VGbkJ1Z2ZOVndkb3Z4SlhCM1VRS3Bfd0lvMmJ6YjFSSDAzT3IzeWtPUG1IUFNiT2xYbmJpZUpvRGF5a01Zb3RkZVRQcDhFNG1laUZBYzVxa0g5NC1VTDd4X0R0b29RVnM?oc=5",
-        "time": "2026-11-24T11:01+00:00"
-      },
-      {
-        "title": "Sensex and Nifty Slip Sharply as Metal Sector Drags Market Down",
-        "source": "MarketsMojo",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZjdiNHpzX0hxemI2UjdBUVZIQTFKa3Zkc2NmYzhmRnA5SU82aFpFZHowMkhTajMwdGFMLWl0amhpWGpnR3daRDFNNkdiSkVHU2dqSDMzYzFXdmJ4aE1UMmZFSzlUazBPb1ZNQlFLUU5aaUNlTDdHalpRbGoxZnczU3RzNkhOWHhwV05jX2FSR2JuOEtvUWNHVVNvX1RINDZmUTdqeUZzaXdTMV9vQ0R1RnhRVlktUTVWVWg3UDZXNA?oc=5",
-        "time": "2026-11-24T09:36+00:00"
-      },
-      {
-        "title": "Milky Mist Dairy Food Limited Share Price",
+        "title": "Market wrap: NIFTY50 jumps 469 points, SENSEX crosses 84,000; midcap and smallcap stocks struggle",
         "source": "Upstox",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXZXgtZjU3dWl1RnQ3TDhTSmUySkl2V0tHSFdYRUx3VDM2UmtNbnlRMEZueEJlRDNYZV9qd3dhODZ6YlVMWDcwZkpwdkVVcXlMZENPMUlNUzZQSjNlMEFJRnhjc3V3YTlyczhOaDRSVQ?oc=5",
-        "time": "2026-11-24T09:14+00:00"
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxObGFxOFRXYWdnWExRQ2pvbFNqMkJBVU40M0NBV0RwQzVXQXItMDlUNE1CU2R0Sjg5ZVAtdzFMZXlQeU9xYXJrOTZNMHZPUVFhbmN2RXhqX2MwdjJzOEhQY2NiRXozU0o5ck5nZDVjeGNZU0lsQkdvamdzUzQzU2djaU1OTktkcEVsdEZqbE9IdWdSUFFxbGVxNDN0X3NCUzlsZlczN1dNYmhpMGFTOU1LM3Uwd25aUzFZb1VnRFVVSHVpTXkxemhiZ1pTclVnZ1VzYV9GcmRPMEtQUEh0cUdLTG9xcENnMFZWYWc?oc=5",
+        "time": "2026-11-25T10:12+00:00"
       },
       {
-        "title": "Nifty 22000 PE 01 DEC 2026: Option Premium, OI & Price",
-        "source": "Kotak Neo",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd0l5bnVXNzF4VGFOTHRyMDI1aVZqd0JneXpwbTJXYXp2SHZPYXZVMkI3TlZLOFZVaGtkYjVNTzItWDd3dVRHNEVmUG9nd2lEdGFabG5SYndDRTVFU1NWN0tMcHVCWFJmdUF5SXVKOXJBUml3eDlFVFdhaWVlS0tBZEJuMA?oc=5",
-        "time": "2026-11-24T08:14+00:00"
+        "title": "Sensex, Nifty recover Monday's losses: 5 factors behind Wednesday's market rally",
+        "source": "CNBC TV18",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeHJwTWU0YnlCQVE5eE5YTEV2Nk1RSGF0TnVqRk1uZGRyVl9pUUJvR1Q1U3hObnFtTjJNWUxsQW0xRUR6NW9nZllod294TFY3QXRuY000OGk4Q1ZXa0hYcjRtWDJIOGRwaEZHRm01NTNKRlgxUnJDN0EtME1YbVlxUE9PMkptRnVCeWhiRWRUZHFDSC1ROFV2WXpsYXE3UWxqVXlBS2poOG5GV3JRSndVOEJpTTl0V2RLMWFySXNn0gHDAUFVX3lxTFBfZFdNT2pXSTVySy1uZ0xPN3BZY3RPN2hxUHp2aGlHYUFGQnNWYW5JYTFXSGFUaTZUOURwM2J6YllpdExCbE9UdHVXNUg5UmFkZjJjVmRvWFlvcEY4ZXpBVDFMZ3NGMzktY0hMVFpDRDdXOXJQdHQyYWZKc2ZoeGVSNmFuQ3pwWHhpOGFWalJ1TnhDSVh1R28td3AyRmJRY0VLX05zTXM0a1FPQ29aUVcycWxMVGlkU2lpMndXMk5jcTNwYw?oc=5",
+        "time": "2026-11-25T10:07+00:00"
       },
       {
-        "title": "Investors become richer by ₹34.61 trillion as Sensex surges in November",
+        "title": "Nifty FMCG index soars 3%; Dabur, Godrej Consumer, HUL rally up to 8%",
         "source": "Business Standard",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQ25DV2JacnN4enBUaHZCS21JZEZidFRhZ0puMGpiVUFkdHlZbWstWHlTUlUxSVc5eThPUmtPYVBtVVJrMUxaenhsZVpQQkpQTGZNNkJ2TDdqQXZCVjROaE15RFBqNnRvdDF0bzRKazVBdUZESENTZjNtQWZhN2FRY1lMMjZTZkM5c0RZbEhfWDVGdU11M21FZkZXY3NLbEdBX25hVG15bDE0TFJfNXV6UkdGdTYtSThFdzU5bGExejhvYmI1cl9EQW9JQWZBLTRGRzE40gHYAUFVX3lxTFBxaHRZdjl3LVJNWGdJT1NBd0hGTll0TmYxMURRNE5LVHFyYmg0UkYxSEFZVzJSZFNhdm5UX0dqR3N0NUJiNWxRVDdkVWdzZDF0M3FaOVlGTWlGVXpmc3A0UExPdEJOME1BX1hxTUQ1U01nUHpKR2RYUzlBbFg0U25VRVI5UDdfRXB4blJNOUVaRkJqWlNyWDBFZmc1YldLMWgwSmFKZUNyLUo2VnFGbHpRVWw1QnRDNXNYSXpYczNyRHllc1p3bkZKUjVxYlJONGtZbHFRa1RGaA?oc=5",
-        "time": "2026-11-24T08:10+00:00"
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPLW4xRW1HeVJ1ZkVtUnVZdXViY3dROWRSTnN5dUtEemFCaUdOY0Nxd3h2ZVQ4TEdkcmpZM0wtMGFieGVSSFZ6T2lNRi04SlJINmFOdzRudWhOQm9pYjFmQnFhYUpyRlFUZjRmOHBVRkxEYzI3Z2dxVnlKTEt4NHRHMzdSRy04SE5JSzBOaXFvRk5fdThNVXh2NnI0TDRRdmRvM082T2twQ2RBaXpQMUZFQzFteTVaR2YtcEdWTXFGT1pXbHFvWHJIX1ExY9IB0AFBVV95cUxQZDBuVzRzOHJVam9tb0V1dXIzNWRKZUQ3aE1UT1RZNXNWcmNXQmJoVW9pcERfclhEZGpjVHVmdFlOQW5yNXV3WlNOa1hDcXU1NkdEeHBOYzNFYWtmSlBwZGVnUXg5c0FURGc2Zlp3WUdWSjl6dzdMaDdLRlNfbDBzQlRieXVuaWwzb3ZGeGhSblBWRXZReXpKc1BWU1RTRzh6RFh0TGRVeUVWNGF5UWdUUVphenU0RU1XSW1McVFSTUk4djl5U0ZaUVc4aFUzU09L?oc=5",
+        "time": "2026-11-25T09:45+00:00"
+      },
+      {
+        "title": "Silver ETFs plunge over 5%, gold ETFs fall nearly 3% as bullion prices extend losses while stock markets...",
+        "source": "Moneycontrol.com",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOamMzVFJDREJTSUpmSDZGRHRFMXVCUkJWdURKUUl0VVVuR1JzRjd5Rk1Ca3pJaFJwQ004cEpWcHFya3ZrdkxRdGItR1JNWDZqSThlNWVBeV82VXZjSUg2ZWNQUjRmVDJ6V1Y3dUEwWDVSSjlQODJBZHpmd2lySktDMGN0djF1TXdzbi01RDBoZkVjd0VveUxDYU5LV1E1eEhHYUlNRkZ5SC1OYllyRkJWcnFibXhnc3podkZtYkJzczZZbGtxX0NGdlh1RDhUZkZPOGpwVVBXRjBUY3lTamE3ejlnNEtOcUMzTXhVN3pkUmg3cVRnQkVhc2stS2pXcVVMMkHSAYcCQVVfeXFMUGoyU0RwdHFxSGl3YmtMQWVEVUtzMjJERHlCN3I5czdRVElMUk03ZzAzSmthTFlpUllBWjVvcWNha09fdUlZMUxJZkdPRGdLYVBYZmNRUlRDY05VcVh6VGh1UzBtRkRrakdkeGJSYll1Umg2dVJSMUJNNjRKZGkycUpyWks1YUhBd1RHRnBjRXRqaEVGRWpsLW1sd3d3eEo2M21aN2V2N0hVcHpDS2d0MHdHZ09nYWVUUTA3TG1wVzBJd0xrQmhybmN1c3hNcTdqQ25LOUFfaFlZMEtqcklDVFNWVmJ4dUxrOGc5eUg2NW1haHZJbE9BajhWMVVOSWl5V1VzN1BHeDQ?oc=5",
+        "time": "2026-11-25T09:45+00:00"
+      },
+      {
+        "title": "Sensex Surges 1.76% Led by FMCG; Media Sector Drags Market Amid Mixed Mid and Small Cap Trends",
+        "source": "MarketsMojo",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOWmVjQVFLVkM5Um9XRURGYUs5S0pTZC1Lc19iN0xQNHZrX19yT1Vfc3JyN1VNaFZvaHdqRUZpOWlIdGtxRGp5Wk9SV1pnaTBJSGppUTBaekM2RW1LVElKQ1dtM2kzdUJielFYYlVBQms2Mmc5bkU1djZzVVIxN0hqMjNNY3V2QzR2MmJvcmxmdDRSeDdhVG9KTWlMdTlUYUZLeDB4dDM2czYxVWFEc05sdFFIZktHWTJqSzNUV3dZUTY1amw4Z1NkYzFMTUV2Q2QwaXpxYllXMFZyZm9ERkZDT1NEUDc?oc=5",
+        "time": "2026-11-25T09:35+00:00"
       }
     ]
   }
