@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T11:15+00:00",
+  "updated": "2026-11-27T11:19+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
@@ -282,40 +282,40 @@
         {
           "symbol": "SNDK",
           "name": "Sandisk Corporation",
-          "close": 81.83,
-          "changePct": 11.17
+          "close": 81.6488,
+          "changePct": 10.92
         },
         {
           "symbol": "LITE",
           "name": "Lumentum Holdings Inc.",
-          "close": 519.0485,
-          "changePct": 8.91
+          "close": 519.12,
+          "changePct": 8.93
         },
         {
           "symbol": "ALAB",
           "name": "Astera Labs, Inc.",
-          "close": 205.5065,
-          "changePct": 7.97
+          "close": 205.3,
+          "changePct": 7.86
         },
         {
           "symbol": "NBIS",
           "name": "Nebius Group N.V.",
-          "close": 91.6005,
-          "changePct": 7.78
+          "close": 91.55,
+          "changePct": 7.72
         },
         {
           "symbol": "MRVL",
           "name": "Marvell Technology, Inc.",
-          "close": 141.07,
-          "changePct": 7.74
+          "close": 140.7,
+          "changePct": 7.46
         }
       ],
       "losers": [
         {
           "symbol": "VRTX",
           "name": "Vertex Pharmaceuticals Incorporated",
-          "close": 522.99,
-          "changePct": -7.29
+          "close": 521.02,
+          "changePct": -7.64
         },
         {
           "symbol": "TMUS",
@@ -332,8 +332,8 @@
         {
           "symbol": "TTWO",
           "name": "Take-Two Interactive Software, Inc.",
-          "close": 225.06,
-          "changePct": -1.0
+          "close": 224.854,
+          "changePct": -1.09
         },
         {
           "symbol": "MAR",
@@ -343,8 +343,8 @@
         }
       ],
       "breadth": {
-        "up": 86,
-        "down": 15,
+        "up": 87,
+        "down": 14,
         "unchanged": 0,
         "total": 101
       },
@@ -357,7 +357,7 @@
       {
         "title": "Sensex Today Tanks 989 Points | Nifty Below 25,650 | 4 Reasons Why Indian Share Markets Are Falling",
         "source": "Equitymaster",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbmNXM3RocHJPLVE2UU1xV1dPSXl2Qng3ZExZclhPNkVha1BqWEdVWG9lazBkXzBIZG5XVnYzcDdhRWNqcjlfVVhScGl2U1FoRXNwOWx4N2pUaVhqY3FYSFdkdm8yTEY1Z045TTFLd3NoSG5XblBEQWw4MFN5cVpNSEFYRGhfZk5jVVFSbGpKeHFuSENvQVQzcVJsRVg0OTlvaktodlROQTFhU2lHei1NUjJsUGIyYzF4Y2JlempmY3ZaSElrN1pWWWxMczBISnlsWU5BUzY0NUw2WHAwSUtnYlZFNHU2U1l1Y0kzcXh3?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWmNrNi1uLWFJenEycS1BOFR5M1Zjb05ZdWVoX1VrdXRXMlNRYW10OERob0dfY0NuaWZ0Sk44ZHdzdDZQU18xd2lUbVFXMGVmYnFLRHQ4RjU5Ykt2QU1ubjloOUZuV0xTOVNfYnF5X1ZaZ3haSU8xX0RmYzZNNW9wUlNDV292cWJqdWl3YkxJT2lncHpmaHNZcDQzMnRTQjQ0YjZhM2F0enVyWHl5ZjhBYXlGVXNhV1RpSWN3dHEzUnZza0lYTEEzUDUtVW1md1hVZUlva05ON2stVmF6WWVORzRTZEl4ZDhiRkZiTTNR?oc=5",
         "time": "2026-11-27T11:04+00:00"
       },
       {
