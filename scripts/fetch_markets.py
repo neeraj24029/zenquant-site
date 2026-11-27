@@ -86,7 +86,25 @@ def nse_index_day(d):
     return None
 
 
+class MarketOpen(Exception):
+    """The exchange is trading right now, so today's numbers are not final yet."""
+
+
+def trading_now(region, now=None):
+    """True while the exchange is in its regular session (UTC, Mon-Fri).
+    NSE 09:15-15:30 IST = 03:45-10:00 UTC. Nasdaq 09:30-16:00 New York time is
+    13:30-20:00 UTC in summer and 14:30-21:00 UTC in winter; the window covers both."""
+    now = now or datetime.now(timezone.utc)
+    if now.weekday() >= 5:
+        return False
+    minutes = now.hour * 60 + now.minute
+    start, end = {"India": (3 * 60 + 45, 10 * 60), "US": (13 * 60 + 30, 21 * 60)}[region]
+    return start <= minutes < end
+
+
 def nifty():
+    if trading_now("India"):
+        raise MarketOpen("NSE is trading; keeping the last close")
     rows, d = [], datetime.now(IST).date()
     for _ in range(50):  # walk back over weekends/holidays until we have ~1 month
         if d.weekday() < 5:
@@ -119,6 +137,8 @@ def nifty():
 
 # ------------------------------------------------------------- US (Nasdaq-100)
 def nasdaq100():
+    if trading_now("US"):
+        raise MarketOpen("Nasdaq is trading; keeping the last close")
     end = datetime.now(timezone.utc).date()
     q = urllib.parse.urlencode({"assetclass": "index", "fromdate": (end - timedelta(days=50)).isoformat(),
                                 "todate": end.isoformat(), "limit": 60})
@@ -175,6 +195,11 @@ if __name__ == "__main__":
     for region, fetch in (("India", nifty), ("US", nasdaq100)):
         try:
             markets.append(dict(fetch(), region=region))
+        except MarketOpen as e:
+            print(f"{region}: {e}")
+            if region in previous:
+                markets.append(previous[region])
+            continue
         except Exception as e:
             failed.append(region)
             print(f"::warning::{region} fetch failed ({type(e).__name__}: {e}); keeping last good data")

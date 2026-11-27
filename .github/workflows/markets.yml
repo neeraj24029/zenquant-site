@@ -2,7 +2,10 @@ name: Refresh market data
 
 on:
   schedule:
-    - cron: "30 1 * * *"   # 07:00 IST daily, after the US close
+    - cron: "47 13 * * *"  # 19:17 IST: after NSE publishes the day's close files
+    - cron: "7 1 * * *"    # 06:37 IST: after the Nasdaq close
+    # Odd minutes on purpose: GitHub delays runs scheduled on the hour the most.
+    # A market that is trading when a run starts keeps its last close.
   workflow_dispatch:        # "Run workflow" button for a manual refresh
 
 permissions:

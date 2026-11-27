@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T11:19+00:00",
+  "updated": "2026-11-27T11:23+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
@@ -282,46 +282,40 @@
         {
           "symbol": "SNDK",
           "name": "Sandisk Corporation",
-          "close": 81.6488,
-          "changePct": 10.92
+          "close": 81.7379,
+          "changePct": 11.04
         },
         {
           "symbol": "LITE",
           "name": "Lumentum Holdings Inc.",
-          "close": 519.12,
-          "changePct": 8.93
+          "close": 516.83,
+          "changePct": 8.45
         },
         {
           "symbol": "ALAB",
           "name": "Astera Labs, Inc.",
-          "close": 205.3,
-          "changePct": 7.86
+          "close": 204.79,
+          "changePct": 7.59
         },
         {
           "symbol": "NBIS",
           "name": "Nebius Group N.V.",
-          "close": 91.55,
-          "changePct": 7.72
+          "close": 91.37,
+          "changePct": 7.51
         },
         {
           "symbol": "MRVL",
           "name": "Marvell Technology, Inc.",
-          "close": 140.7,
-          "changePct": 7.46
+          "close": 140.7364,
+          "changePct": 7.49
         }
       ],
       "losers": [
         {
           "symbol": "VRTX",
           "name": "Vertex Pharmaceuticals Incorporated",
-          "close": 521.02,
-          "changePct": -7.64
-        },
-        {
-          "symbol": "TMUS",
-          "name": "T-Mobile US, Inc.",
-          "close": 163.3582,
-          "changePct": -1.74
+          "close": 522.0,
+          "changePct": -7.47
         },
         {
           "symbol": "MDLZ",
@@ -332,14 +326,20 @@
         {
           "symbol": "TTWO",
           "name": "Take-Two Interactive Software, Inc.",
-          "close": 224.854,
-          "changePct": -1.09
+          "close": 225.0,
+          "changePct": -1.03
         },
         {
           "symbol": "MAR",
           "name": "Marriott International",
           "close": 412.0577,
           "changePct": -0.89
+        },
+        {
+          "symbol": "ORLY",
+          "name": "O'Reilly Automotive, Inc.",
+          "close": 96.0562,
+          "changePct": -0.66
         }
       ],
       "breadth": {
@@ -355,40 +355,40 @@
     "source": "Google News",
     "items": [
       {
-        "title": "Sensex Today Tanks 989 Points | Nifty Below 25,650 | 4 Reasons Why Indian Share Markets Are Falling",
-        "source": "Equitymaster",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWmNrNi1uLWFJenEycS1BOFR5M1Zjb05ZdWVoX1VrdXRXMlNRYW10OERob0dfY0NuaWZ0Sk44ZHdzdDZQU18xd2lUbVFXMGVmYnFLRHQ4RjU5Ykt2QU1ubjloOUZuV0xTOVNfYnF5X1ZaZ3haSU8xX0RmYzZNNW9wUlNDV292cWJqdWl3YkxJT2lncHpmaHNZcDQzMnRTQjQ0YjZhM2F0enVyWHl5ZjhBYXlGVXNhV1RpSWN3dHEzUnZza0lYTEEzUDUtVW1md1hVZUlva05ON2stVmF6WWVORzRTZEl4ZDhiRkZiTTNR?oc=5",
-        "time": "2026-11-27T11:04+00:00"
+        "title": "Share Market Today: Nifty 50, Bank Nifty | Nov 27, 2026",
+        "source": "Liquide Blog",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORmdZc29ieXlNdktvbzJvYzh5UElhZW80eVNOa0NFVWVTaENlMVBCYS1QV0hQWGRTcWt0SDVBNU5CTC1DZlpiMTY0U0NxLXNTVS1vbmZYeVk3cXQ5WElzRDNpUFFvWHBGRFIzWkhzYkhpQ0oxREJuNUFZRFVIRnJLRjVlelI0S2RGUXBKMWE3WUVRSUVaZkw0STB2eVlSVlBEbEU4dFFrMzRhVFR2UHVGdWpFWk9iTldhNUZ0dVIxLTJtVlJCcW1GLUNyUk9kNzVuZ1VlT3N1bG42bjV3a2pyOA?oc=5",
+        "time": "2026-11-27T11:17+00:00"
       },
       {
         "title": "Stock markets snap 2-day rally; Sensex tanks 989 points amid profit booking",
-        "source": "The Pioneer",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbXdZQlN4bTdwQUJWQjBRMHpaOVNPOGMtS1psSGJkLXlLVVIzRTdpbTFYRmVjMU44RjBmdUl5d3BCWU1qcTZFeXZySVlkUFphMVBwZGtXYU0tZUhvOFV2ZmVuYkswanQxOWc0V3BVb01YWUhTM3Jrbmh4QWk5UTA5Y1hrRHhOMDR4bURid3B30gGbAUFVX3lxTFBIVi1LNTJNUWVIc2tjVzNzZE1BaUN1Tk4za1VQUndjN2l1LXR5Z3gzXzRMRDFSdTBpTjhudVI1bU44V0tFcnptZVR5Xy1BZDRmbTJRRFE1b2J0OHRtYWR2cjFONkVhTnQwMUxjUU5pTV9RV2p1aFB3c3B3elduTVBjcjVtajBpdDJwcVktOGNIVHZMeTRtT3Q2dWtz?oc=5",
-        "time": "2026-11-27T11:00+00:00"
+        "source": "Deccan Herald",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxON2dBVHhCc2txcjRPT1EzdXU3QWd0Smx5ZDZqczcwYmt5UUcyMGVLRTdQV0xUNEFxeVQ0TWRER3JfTjJIVlY0M1djYzBkcEx0cUZFckpRWjFENGRlXzMzdGVjeTI3OTZkdU9LV0dzTUZ4UF9kX3pEQjdqbFVqcFNpbkdQeUdTNUV1cGlMU0dUbEZ2M0JicDFvVFBZTDBLWWNiYW5OZ2JEN2ZvdFR2NUFxdTh5bFJFRllSdUlYTjRxRDJ1YngxZE13?oc=5",
+        "time": "2026-11-27T11:15+00:00"
       },
       {
-        "title": "Sebi clarifies no change proposed to managing director age limit at MIIs",
-        "source": "Business Standard",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOalo2aVEtcW5scDZBanlYVDRXZ2VHX1RIVktRRFRyLVVFZVhISTVweXNsU285WmlKMDhTWGx3MWpyQkpmcDNQbkNyWEt6ay1XNkt3c0MyUXJ2d0lDYkFIcXlKQ1ZRSzhPVVpLZEFHMzBxTlpWVzFteE9aWUVzazZobk5TYVpxUnU3dUs5bG1tN1RBSzE1enNReWkyTE1LS0FRbWhxcEFUcTk1UE9ZZ1RlNlJSN3gwbHplYjRFaHhreng1YWlKUm5CdU5vbUNFQmpub1BrYjVn0gHbAUFVX3lxTFBWSEdMMFRPem5oZEt1cWtEak1hRUxCX2Y5N29DMEJCNVdEVmVZd3R4LW5IVzMyUUJsMlNGd3piWWVoVEpUaVVIOU55NmVMczQ0VkJYQzlTYTVRTnd3NGVGMDJoeW9PNy0tZU8zdmVwZ0dqZWRIM0lEaFR0dkpTNnV3SlA4TFhpU1hPc3V3UjdpcGVMbDY4RGlBSlNHU3Q2ZkpOYVVlOHNfYXZOb0RvY3g5ejdkWnF3S2hVNWtNU28yeDNWYTV6OXZ4M1BLMWVwZFB2WFFZQnVTbnB5Zw?oc=5",
-        "time": "2026-11-27T10:56+00:00"
+        "title": "National Stock Exchange of India Wins RBI Nod for Bond Futures",
+        "source": "Multibagg AI",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUDRrTkNOYUNWVF9LWUtGVW1BWThHdGV6dUxJRnVldnBfY21kM0F6OTNNam9vcEc0ZGpnTEJib2ozeEJqUm9Xa1B3Q2VVR1VJODhuTUcxUFZFRVdwQmRTclpqNzA2anB6NmVKeENfeGV2Nmt2bDBQX0ZKa2tma21HY1NaSHRKRWd1REtuSmdNNHNxSG5acjBzbnNPTXVZeXU1LWVIMC1kYTQ?oc=5",
+        "time": "2026-11-27T11:11+00:00"
       },
       {
-        "title": "Stock markets snap 2-day rally; Sensex, Nifty end in red amid profit booking",
-        "source": "DD India",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmFfcWhyazUycEdmZXNJU1BGalg5dEZMSENiVEtIeHRZRHNPemxOb19OQUpLZXNXS05qZW9uNDVMMUZUYzVrX0NfTVAzclZhRGlfRWM1a1h6VVVmNTgzaWZTUXJlc1dIVXRNTUZReFZrNExuNFdDVVoxWW44WXFnNzh2d0NHYUlBZ3lrNi1jNWVmTkFvWnd6WmZMdGZHUTBlMmUtby04TTI?oc=5",
-        "time": "2026-11-27T10:50+00:00"
+        "title": "Top Gainers Today 27-Nov-2026: Waaree Renewable Soars 20%",
+        "source": "Multibagg AI",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb01TX0FRZWtrdU5ESlB0ZExGQWM4N245dDhzRTh6R2NqOXBEYzBnUHFGaDhHV3QtRVh0NmdTUFpFd25BNU9XSHpTZHphc0JZNmdrTU5jQUxNN1B4d3U3MFZUSjlOU1VYb0pyWXJ3QUdnNWJWdkxYeFVtcG9MNXlhSllMa0tIU1FoUVFNYi1wbWZSeWNDaEU3UldiTTY?oc=5",
+        "time": "2026-11-27T11:07+00:00"
       },
       {
-        "title": "Stock Markets Fall: Sensex Tanks 989 Pts Amid Profit Booking",
-        "source": "Rediff MoneyWiz",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVGJsdzhJNDl0Zm1VN180bnRTeFJwblVVYi0tVHBsQjQxSEVpQnhXVjk5bHNaZUxzekZfVXQ1VWdjQzRQdUNnT2MybDZBTkV6NUl4ZFN1NUNoQkMzbFZHQVBYVjhDUTQ5a1RSaEU0UVZQZGdQR3Iwem5GMHMtNVFVOWlfM1B5eFpSOW0zdlhIamFXSDhKUzNXSDJaeG5DZklvT3M3UlluQXljSlk5dkI3U9IBtgFBVV95cUxPVDdfSzBxMUFNUjFQOGw4eTRiMXJrWjljTG5LOGt1dEZTOXZxLVpnYmh6eVhObkFtTk9MV0oweU50S3ZNc1FiRk9WeDlWLThrWUFaY2szV2dva1VuTnRweFFkZXJxbnBjNjJwYzNzU2tubVFSaFNBalRrZ2JvWTNzekZvRy1zQXNld21rcGNMSkcyc0xEMlRZNTlHNWZZRjlwUkhwSzF2aklJNGtxelpsRFJYdFpJQQ?oc=5",
-        "time": "2026-11-27T10:38+00:00"
+        "title": "Sensex Today Tanks 989 Points | Nifty Below 25,650 | 4 Reasons Why Indian Share Markets Are Falling",
+        "source": "Equitymaster",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbmNXM3RocHJPLVE2UU1xV1dPSXl2Qng3ZExZclhPNkVha1BqWEdVWG9lazBkXzBIZG5XVnYzcDdhRWNqcjlfVVhScGl2U1FoRXNwOWx4N2pUaVhqY3FYSFdkdm8yTEY1Z045TTFLd3NoSG5XblBEQWw4MFN5cVpNSEFYRGhfZk5jVVFSbGpKeHFuSENvQVQzcVJsRVg0OTlvaktodlROQTFhU2lHei1NUjJsUGIyYzF4Y2JlempmY3ZaSElrN1pWWWxMczBISnlsWU5BUzY0NUw2WHAwSUtnYlZFNHU2U1l1Y0kzcXh3?oc=5",
+        "time": "2026-11-27T11:04+00:00"
       },
       {
-        "title": "Closing Bell, 27 November 2026: Sensex, Nifty Fall as IT Stocks Face Selling Pressure",
-        "source": "Kotak Neo",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcXNHWHg4dkNqeXd5RjNZYi0yMkotcks0a3c0RjMzS2RsTUpGanJBcXRUN1VqTUxwM2dZRDJvZkt1MElSZXV0WjVmZU94SUdvSkpiMkhyQlAyY0VjRmRTS05SWm5LQ1JGbF85TXdRcVB5a1MwQUNadWhUbDJKS2EyeG5Da25YUW91RWVnNXU5RXVOenQ2bTVGNmdJaDI5ek9P?oc=5",
-        "time": "2026-11-27T10:35+00:00"
+        "title": "Top Losers Today 27-Nov-2026: HMA Agro Industries Drops 9.99%",
+        "source": "Multibagg AI",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdkRCUW9sak1Da0xnOWNsckduVUhTa3VUMmotYmdFWGM0eF9VRUozN183SXdRZU5UTVQ1SW9Za0pwcU5xY2FFZEtVZnppNUhOOC0wdVM2UnNjTjVCZW1SRVUtWW90Q3BQMEhod2loYkJ0VTBxeGhBTzVPcE9HbURhZFVGNHpkQWFLenBYUG84aEpSOEhZMUZTUmo1SQ?oc=5",
+        "time": "2026-11-27T11:02+00:00"
       }
     ]
   }
