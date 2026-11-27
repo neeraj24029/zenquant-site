@@ -1,23 +1,19 @@
 {
-  "updated": "2026-11-27T11:45+00:00",
+  "updated": "2026-11-27T22:22+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
       "name": "NIFTY 50",
       "market": "NSE · India",
       "currency": "INR",
-      "date": "2026-11-26",
+      "date": "2026-11-27",
       "status": "closed",
-      "open": 25873.2,
-      "close": 25884.5,
-      "prevClose": 25819.25,
-      "change": 65.25,
-      "changePct": 0.25,
+      "open": 25839.25,
+      "close": 25607.2,
+      "prevClose": 25884.5,
+      "change": -277.3,
+      "changePct": -1.07,
       "history": [
-        {
-          "d": "2026-10-26",
-          "c": 22753.2
-        },
         {
           "d": "2026-10-27",
           "c": 22749.75
@@ -101,76 +97,80 @@
         {
           "d": "2026-11-26",
           "c": 25884.5
+        },
+        {
+          "d": "2026-11-27",
+          "c": 25607.2
         }
       ],
-      "monthPct": 13.76,
+      "monthPct": 12.56,
       "gainers": [
         {
-          "symbol": "HCLTECH",
-          "name": "HCL Technologies",
-          "close": 1468.6,
-          "changePct": 6.42
+          "symbol": "BEL",
+          "name": "Bharat Electronics",
+          "close": 411.45,
+          "changePct": 1.72
         },
         {
-          "symbol": "BSE",
-          "name": "BSE",
-          "close": 3990.4,
-          "changePct": 5.7
+          "symbol": "JSWSTEEL",
+          "name": "JSW Steel",
+          "close": 1321.2,
+          "changePct": 1.4
         },
         {
-          "symbol": "TCS",
-          "name": "Tata Consultancy Services",
-          "close": 2640.3,
-          "changePct": 4.89
+          "symbol": "TITAN",
+          "name": "Titan Company",
+          "close": 4675.3,
+          "changePct": 0.95
         },
         {
-          "symbol": "INFY",
-          "name": "Infosys",
-          "close": 1183.0,
-          "changePct": 4.69
+          "symbol": "HINDALCO",
+          "name": "Hindalco Industries",
+          "close": 923.0,
+          "changePct": 0.82
         },
         {
-          "symbol": "TECHM",
-          "name": "Tech Mahindra",
-          "close": 1854.7,
-          "changePct": 2.97
+          "symbol": "SBILIFE",
+          "name": "SBI Life Insurance Company",
+          "close": 1856.0,
+          "changePct": 0.74
         }
       ],
       "losers": [
         {
-          "symbol": "ASIANPAINT",
-          "name": "Asian Paints",
-          "close": 2543.0,
-          "changePct": -2.98
-        },
-        {
-          "symbol": "BAJFINANCE",
-          "name": "Bajaj Finance",
-          "close": 1097.85,
-          "changePct": -2.96
-        },
-        {
           "symbol": "SHRIRAMFIN",
           "name": "Shriram Finance",
-          "close": 961.85,
-          "changePct": -2.84
+          "close": 923.5,
+          "changePct": -3.99
         },
         {
-          "symbol": "NESTLEIND",
-          "name": "Nestle India",
-          "close": 1320.3,
-          "changePct": -2.81
+          "symbol": "BAJAJ-AUTO",
+          "name": "Bajaj Auto",
+          "close": 10485.0,
+          "changePct": -3.36
         },
         {
-          "symbol": "BAJAJFINSV",
-          "name": "Bajaj Finserv",
-          "close": 1885.9,
-          "changePct": -2.03
+          "symbol": "HCLTECH",
+          "name": "HCL Technologies",
+          "close": 1424.1,
+          "changePct": -3.03
+        },
+        {
+          "symbol": "INFY",
+          "name": "Infosys",
+          "close": 1151.3,
+          "changePct": -2.68
+        },
+        {
+          "symbol": "TCS",
+          "name": "Tata Consultancy Services",
+          "close": 2572.5,
+          "changePct": -2.57
         }
       ],
       "breadth": {
-        "up": 22,
-        "down": 28,
+        "up": 10,
+        "down": 40,
         "unchanged": 0,
         "total": 50
       },
@@ -355,46 +355,46 @@
     "source": "Google News",
     "items": [
       {
-        "title": "Green Energy Stocks Witness Mixed Trading as Battery Segment Gains Amid Broader Market Sell-Off (27 November 2026)",
-        "source": "SolarQuarter",
-        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZXN1Ql9CLVpEN1dIVzJUOFN0WThPR2ZCa29hR21CZjdSYnlNa0ZmbW9BZUpVSHBLOW5fcW51VEVYaUdyRWxfUEItVlBHMEIzXzhOOUhtY2M3QWh0VHp4QmJoYWctUkFzQjlSRXc3bjZ0M2EwcGVTNy10VkY4REEyUU9KOFNtRUpSQ3hRWngzaklvQUV0R2lIV3Q3Y05ielU0ckl4RzVZcVc5dGlKZUhiSmIyVGxVd3ctQmJKakxhR0JHNW5TeXR6RVJYNGJQR2hWTU9YN3dndTVCRTQ2ekNmbUtPUQ?oc=5",
-        "time": "2026-11-27T11:27+00:00"
+        "title": "Ircon International fined ₹7.69 lakh by NSE and BSE for board non-compliance",
+        "source": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQTdLWHBzS0U3VnlNVmRGYTlfXzNLTGpvVU41X2xoZXJwY2tlTTgzQmt1VjhHdjNvT2dHUUJweUllaU5mNGd6Q2d3S1FIZnZGZ1J0X2NvTWdkMWl6Z0kwTG9DUlo4NlBtNHhJZUxUTlQyck43dlZGeFUwbmM2cjM5TEd4N3FNZ0FPNTVHMVNrOXFURnYtZ0NaV2RZSnJYa1A1SEhfaDVoVmRlblRucUxqYVdPbW1BWFdNQ0poS1Jn?oc=5",
+        "time": "2026-11-27T19:17+00:00"
       },
       {
-        "title": "Share Market Today: Nifty 50, Bank Nifty | Nov 27, 2026",
-        "source": "Liquide Blog",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORmdZc29ieXlNdktvbzJvYzh5UElhZW80eVNOa0NFVWVTaENlMVBCYS1QV0hQWGRTcWt0SDVBNU5CTC1DZlpiMTY0U0NxLXNTVS1vbmZYeVk3cXQ5WElzRDNpUFFvWHBGRFIzWkhzYkhpQ0oxREJuNUFZRFVIRnJLRjVlelI0S2RGUXBKMWE3WUVRSUVaZkw0STB2eVlSVlBEbEU4dFFrMzRhVFR2UHVGdWpFWk9iTldhNUZ0dVIxLTJtVlJCcW1GLUNyUk9kNzVuZ1VlT3N1bG42bjV3a2pyOA?oc=5",
-        "time": "2026-11-27T11:17+00:00"
+        "title": "Axis Mutual Fund launches Nifty LargeMidcap 250 Index Fund; NFO open until December 11",
+        "source": "Livemint",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZU1GNnZOdm9MRFVvVjgxRGxxSUJpa1BJQllTc2Qwbk4yT3Z4ZHZaMzR0ZWNjRmhNMnlhSTFXSmxuNGpfWXN0WkFYOTRFOGZkMVE3M2FTVm11b1ctQ3hpM3BmTFQwbmhQYkl0MEJwTDJDaGpvT1NTTWl5eWczZXZXYnMtWDNTYW5raUJ2R0JzRm83SGtibGo4MEhVWW9lRk1QNDdYUEN0NW5qMWNRdy1RRGdlVnBUMDRqeTR0Wlg5LWlweUFKV05PM184djBnYmdWR0hpWTdLdEk4Ylgyai0xUFVhcXktaUtt0gHuAUFVX3lxTFBGdFNiT3R1d2JYX2hsaVY5a2xFSjh4X2o3OTVRQkc4LW5wZWxaeVBLellCaGJvd1Z6T0UtZHlwaFlYWm4yYkVJSjYxYXFGX0VXQ2lFa09ITGNENGttUGJnUmJvMkNEbDBZYlpEX1dSQ1JnUGpwZENiQ2V6RDdpa204WUV2a2lPSEt3QjlGb0Y3MFB6OTNDd2tpU1RVNWtfdkU2ZDJ6RVA3NTM2UGRCQnpVMS1Mek9HenZBdnZfaVZ2QmdjQTF3Ty1VY3R6WWh4ejZmdjcyVmZQdmtyazM1Tms4UjJBSzM0cF9vVmRVdGc?oc=5",
+        "time": "2026-11-27T18:38+00:00"
       },
       {
-        "title": "National Stock Exchange of India Wins RBI Nod for Bond Futures",
-        "source": "Multibagg AI",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUDRrTkNOYUNWVF9LWUtGVW1BWThHdGV6dUxJRnVldnBfY21kM0F6OTNNam9vcEc0ZGpnTEJib2ozeEJqUm9Xa1B3Q2VVR1VJODhuTUcxUFZFRVdwQmRTclpqNzA2anB6NmVKeENfeGV2Nmt2bDBQX0ZKa2tma21HY1NaSHRKRWd1REtuSmdNNHNxSG5acjBzbnNPTXVZeXU1LWVIMC1kYTQ?oc=5",
-        "time": "2026-11-27T11:11+00:00"
+        "title": "IT, bank heavyweights drag markets down 1% amid rising crude oil prices",
+        "source": "Business Standard",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOS043bFZ2c1hrS0xmeHdmbXZiSS1zVlhkNldwTXdtUlMwMDZkYm9MV3FyMjNBYmZHWXNnVWtadlBKWW1FMmVhazQtN2ZteFNZUG03SEN2dWpYVVdxRVkwM3N2eVpFOXo5LXRxQ1htN2ZXZFZWMFctM295MWF2aUNubjZNSUV6cFk0Y1BGZ05UZldBUklIN1JXazRHWkp3MkVRWm5kV2ZjVHB1eG4wemtaaDNZVGVpWVlMaDlGUjNhMzR5QTlnckktM1Q5c3hUNXA1UWfSAdcBQVVfeXFMUHItbjRDYWZGQ1pQeE9WVlJmaGhrdGRPSjVRYXpFcUx5emxrMF9MZVNRQnZhVHIxNE1PbHpIUlFKcS1SamJQOXgzZTFKenlYamQ4M1B4czRBNzAyOFpYbTVhQTljbXpRQzktU05BU0hVS0M1ZEU5NUdfVHI1WWhJZ1RPNlhESzROQWU2emhoaXhkUUpucG1ZWDZQWURvSk4zN05JZDhxeG9tOGFmU0UwVGMzYl96ZWlvUEZGd240cUgtWWtkeldLWEd6eFdRaGRHOFlVcmxXa1U?oc=5",
+        "time": "2026-11-27T18:30+00:00"
       },
       {
-        "title": "Top Gainers Today 27-Nov-2026: Waaree Renewable Soars 20%",
-        "source": "Multibagg AI",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOb01TX0FRZWtrdU5ESlB0ZExGQWM4N245dDhzRTh6R2NqOXBEYzBnUHFGaDhHV3QtRVh0NmdTUFpFd25BNU9XSHpTZHphc0JZNmdrTU5jQUxNN1B4d3U3MFZUSjlOU1VYb0pyWXJ3QUdnNWJWdkxYeFVtcG9MNXlhSllMa0tIU1FoUVFNYi1wbWZSeWNDaEU3UldiTTY?oc=5",
-        "time": "2026-11-27T11:07+00:00"
+        "title": "HEG completes demerger, lists shares on BSE, NSE",
+        "source": "ET Manufacturing",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaGw5aHVEQnNYdm4zNTRNeUxhSzhoTVlDd3Frc083MGVfWnNONkd3TVc3UkhwMW9Kd09oNjNCNkhPd3RHQk5RYWVPNjBucGhnNFd1OFJhTTRGUnlHMnVJQ1ZXR1RRakdFa3ZlMi1udmZSWjE3Rmlrd2FlQXVYSmN6TDludnpURl9DSlNCYXV1Tk5DV2ZlUV92ZG9qTDItOWI2bTJER2M0dHVQdlhhQlh4aVZIR05WaVJEM0pSemxn0gHDAUFVX3lxTE5zZGdIelhiZXhnVUI1OWJUdlVVM1AxRmplakFReXVUaHF4eVpGVmdCeTJTdm5SV1F6R0JWbzE5Z1FHaG1meklaR3JnLUFFbGkydWxkQUtaUk1BdHZRMUlXNVVzZDdkR2tzaUY0OGFwdGZ3STlxelpaNTllVTlMNThPeE1PR0pNYTAyS251a2hfTTZRTTVZWnlMdy1ZLTMwRjdJY0hYWGVEdUdSNlJWa0ZBVTJzdlRPVmM0SkVjQk9QQzRKdw?oc=5",
+        "time": "2026-11-27T17:26+00:00"
       },
       {
-        "title": "Sensex Today Tanks 989 Points | Nifty Below 25,650 | 4 Reasons Why Indian Share Markets Are Falling",
-        "source": "Equitymaster",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbmNXM3RocHJPLVE2UU1xV1dPSXl2Qng3ZExZclhPNkVha1BqWEdVWG9lazBkXzBIZG5XVnYzcDdhRWNqcjlfVVhScGl2U1FoRXNwOWx4N2pUaVhqY3FYSFdkdm8yTEY1Z045TTFLd3NoSG5XblBEQWw4MFN5cVpNSEFYRGhfZk5jVVFSbGpKeHFuSENvQVQzcVJsRVg0OTlvaktodlROQTFhU2lHei1NUjJsUGIyYzF4Y2JlempmY3ZaSElrN1pWWWxMczBISnlsWU5BUzY0NUw2WHAwSUtnYlZFNHU2U1l1Y0kzcXh3?oc=5",
-        "time": "2026-11-27T11:04+00:00"
+        "title": "Highway Infrastructure submits revised valuation report to NSE",
+        "source": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQREg0a1p1dG5Nelo4c01kQVRJWGQweF9kNUpwMkcwT0tRMWlyazRJekViOExhSFdMWnl6d1BiUUx3QzJhR3FVSFBPWDFFVnZBa2RsNUd4eUlvQ0t0R3duVWtfRklsN0lYSVJvSjE1NGVpY1l1U0QxYXA5ZXNCQm1NR3hURVlOTHl0V29IdF9kWmctSkswQTdzYWZrVlduYWUyZUxfMEtJeEI1ejNYeU1UazBmZDlDZkU?oc=5",
+        "time": "2026-11-27T17:07+00:00"
       },
       {
-        "title": "Top Gainers Today 27-Nov-2026: Waaree Renewable Gains 20%",
-        "source": "Multibagg AI",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ0I4TmxTdkNoZElOMEwwY2VncElrNW1RRG9oQklkZ3JKRmcwYi1PUUlHSDFpTU9mZXhyalQtTDVyLXBWa3ZDVVFQYXFFYkdjSDZVV1JBSTNHa1VNOENScXNwNGotcDBwRWJwSzFlM3FlVHpLTWhXTlZHOG41V1lNR212U0hhXzhpdXEwRjhqN0JUSWVDdDJ0UXQtcFQ?oc=5",
-        "time": "2026-11-27T11:01+00:00"
+        "title": "Stock Market Prediction for Monday 30 Nov: GDP and Month-End",
+        "source": "Univest",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBZZTdUQmRkZXZUeDhWQURUY1BDTHI3ZGtCOGdKQ3FwbXAyR19uZ21JYk9OOGRjREs3ZlpxVGJNX0lJQ2w1Y0J6aHg0OFhXVThJLTYtRm9lMEdZOGdlZ052cjgwd3hETDlPSDFaMHhleG5fTmdW?oc=5",
+        "time": "2026-11-27T17:05+00:00"
       }
     ]
   },
   "short": {
-    "id": "Rqfq9xcXK6E",
-    "title": "+4.7% in One Day, 1/3 From ONE Stock: Rally or Rotation?",
-    "published": "2026-11-25"
+    "id": "nQd3m-m4KMw",
+    "title": "Oil +0.8%, Sensex −989? Here's the link | Lesson #1",
+    "published": "2026-11-27"
   }
 }
