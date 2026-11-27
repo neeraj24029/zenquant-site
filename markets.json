@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T11:39+00:00",
+  "updated": "2026-11-27T11:45+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
@@ -282,52 +282,52 @@
         {
           "symbol": "SNDK",
           "name": "Sandisk Corporation",
-          "close": 81.01,
-          "changePct": 10.05
+          "close": 80.82,
+          "changePct": 9.79
         },
         {
           "symbol": "LITE",
           "name": "Lumentum Holdings Inc.",
-          "close": 515.01,
-          "changePct": 8.06
-        },
-        {
-          "symbol": "NBIS",
-          "name": "Nebius Group N.V.",
-          "close": 91.0,
-          "changePct": 7.07
+          "close": 515.35,
+          "changePct": 8.14
         },
         {
           "symbol": "ALAB",
           "name": "Astera Labs, Inc.",
-          "close": 203.6,
-          "changePct": 6.97
+          "close": 204.1212,
+          "changePct": 7.24
+        },
+        {
+          "symbol": "NBIS",
+          "name": "Nebius Group N.V.",
+          "close": 90.89,
+          "changePct": 6.94
         },
         {
           "symbol": "MRVL",
           "name": "Marvell Technology, Inc.",
-          "close": 139.96,
-          "changePct": 6.9
+          "close": 139.7,
+          "changePct": 6.7
         }
       ],
       "losers": [
         {
           "symbol": "VRTX",
           "name": "Vertex Pharmaceuticals Incorporated",
-          "close": 522.0,
-          "changePct": -7.47
+          "close": 522.99,
+          "changePct": -7.29
         },
         {
-          "symbol": "MDLZ",
-          "name": "Mondelez International, Inc.",
-          "close": 66.9027,
-          "changePct": -1.34
+          "symbol": "PANW",
+          "name": "Palo Alto Networks, Inc.",
+          "close": 349.8,
+          "changePct": -1.78
         },
         {
           "symbol": "TTWO",
           "name": "Take-Two Interactive Software, Inc.",
-          "close": 224.71,
-          "changePct": -1.16
+          "close": 224.55,
+          "changePct": -1.23
         },
         {
           "symbol": "MNST",
@@ -385,10 +385,10 @@
         "time": "2026-11-27T11:04+00:00"
       },
       {
-        "title": "Top Losers Today 27-Nov-2026: HMA Agro Industries Drops 9.99%",
+        "title": "Top Gainers Today 27-Nov-2026: Waaree Renewable Gains 20%",
         "source": "Multibagg AI",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdkRCUW9sak1Da0xnOWNsckduVUhTa3VUMmotYmdFWGM0eF9VRUozN183SXdRZU5UTVQ1SW9Za0pwcU5xY2FFZEtVZnppNUhOOC0wdVM2UnNjTjVCZW1SRVUtWW90Q3BQMEhod2loYkJ0VTBxeGhBTzVPcE9HbURhZFVGNHpkQWFLenBYUG84aEpSOEhZMUZTUmo1SQ?oc=5",
-        "time": "2026-11-27T11:02+00:00"
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ0I4TmxTdkNoZElOMEwwY2VncElrNW1RRG9oQklkZ3JKRmcwYi1PUUlHSDFpTU9mZXhyalQtTDVyLXBWa3ZDVVFQYXFFYkdjSDZVV1JBSTNHa1VNOENScXNwNGotcDBwRWJwSzFlM3FlVHpLTWhXTlZHOG41V1lNR212U0hhXzhpdXEwRjhqN0JUSWVDdDJ0UXQtcFQ?oc=5",
+        "time": "2026-11-27T11:01+00:00"
       }
     ]
   },

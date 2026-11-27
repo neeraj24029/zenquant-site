@@ -91,15 +91,20 @@ class MarketOpen(Exception):
 
 
 def trading_now(region, now=None):
-    """True while the exchange is in its regular session (UTC, Mon-Fri).
-    NSE 09:15-15:30 IST = 03:45-10:00 UTC. Nasdaq 09:30-16:00 New York time is
-    13:30-20:00 UTC in summer and 14:30-21:00 UTC in winter; the window covers both."""
+    """True while prices for that market can still move (Mon-Fri).
+    India: NSE session 09:15-15:30 IST = 03:45-10:00 UTC.
+    US: Nasdaq stock prices also move in pre-market (from 04:00 New York) and
+    after-hours (to 20:00 New York), i.e. 08:00-01:00 UTC across summer and winter.
+    Shifting the clock back 2 hours turns that into 06:00-23:00 on the trading day."""
     now = now or datetime.now(timezone.utc)
+    if region == "US":
+        now -= timedelta(hours=2)
+        start, end = 6 * 60, 23 * 60
+    else:
+        start, end = 3 * 60 + 45, 10 * 60
     if now.weekday() >= 5:
         return False
-    minutes = now.hour * 60 + now.minute
-    start, end = {"India": (3 * 60 + 45, 10 * 60), "US": (13 * 60 + 30, 21 * 60)}[region]
-    return start <= minutes < end
+    return start <= now.hour * 60 + now.minute < end
 
 
 def nifty():
@@ -215,9 +220,10 @@ if __name__ == "__main__":
     import sys
     try:  # last good data, used for any market whose source fails today
         with open("markets.json", encoding="utf-8") as f:
-            previous = {m.get("region"): m for m in json.load(f).get("markets", [])}
+            last = json.load(f)
     except (OSError, ValueError):
-        previous = {}
+        last = {}
+    previous = {m.get("region"): m for m in last.get("markets", [])}
     markets, failed = [], []
     for region, fetch in (("India", nifty), ("US", nasdaq100)):
         try:
@@ -233,8 +239,8 @@ if __name__ == "__main__":
             if region in previous:
                 markets.append(previous[region])
     if len(failed) == 2 or len(markets) < 2:
-        sys.exit("Both markets failed and no previous data to fall back on" if len(failed) == 2
-                 else "A market failed and there is no previous data for it")
+        sys.exit("Both markets failed today; the site keeps its last data" if len(failed) == 2
+                 else "A market is unavailable and there is no previous data for it")
     data = {"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
             "source": "NSE and Nasdaq official end-of-day data",
             "markets": markets}
@@ -243,10 +249,12 @@ if __name__ == "__main__":
     except Exception as e:  # headlines are optional
         print("news skipped:", e)
     try:  # newest YouTube Short for the "From our feed" section (optional)
-        data["short"] = youtube_latest_short()
+        data["short"] = youtube_latest_short() or last.get("short")
         print("short:", data["short"])
     except Exception as e:
         print("short skipped:", e)
+        if last.get("short"):
+            data["short"] = last["short"]  # keep showing the last known Short
     with open("markets.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     # Same data as a script, so the page also works when opened straight from disk (file://)
