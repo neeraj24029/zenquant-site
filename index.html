@@ -443,7 +443,12 @@ footer a{color:var(--ink-subtle);text-decoration:none;margin-left:20px}
     var l=document.querySelector('.links a[href="#markets"]'),m=document.querySelector('.mnav a[href="#markets"]');
     if(l)l.style.display='none';if(m)m.style.display='none';
   }
-  (window.ZQ_MARKETS?Promise.resolve(window.ZQ_MARKETS):fetch('markets.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})).then(function(data){
+  // Online: always read the freshest markets.json (never a browser-cached copy).
+  // Opened from disk (file://): use markets.js, since browsers block fetch there.
+  (/^https?:$/.test(location.protocol)
+    ? fetch('markets.json?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){if(window.ZQ_MARKETS)return window.ZQ_MARKETS;throw 0})
+    : (window.ZQ_MARKETS?Promise.resolve(window.ZQ_MARKETS):Promise.reject(0))
+  ).then(function(data){
     var sh=data.short, ytb=document.getElementById('yt'); // newest YouTube Short, set by the daily refresh
     if(sh&&ytb&&/^[\w-]{11}$/.test(sh.id)&&sh.id!==ytb.dataset.id){
       var im=ytb.querySelector('img');
