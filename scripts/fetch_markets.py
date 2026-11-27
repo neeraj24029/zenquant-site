@@ -25,9 +25,20 @@ SESSIONS = 22  # ~1 month of trading days for the trend line
 TOP_N = 5
 
 
-def get(url, timeout=30):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
-        return r.read()
+def get(url, timeout=30, tries=4):
+    """Fetch a URL, retrying temporary failures (exchanges sometimes refuse or time out)."""
+    import time
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 404 or attempt == tries - 1:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == tries - 1:
+                raise
+        time.sleep(5 * (attempt + 1))
 
 
 def num(s):
@@ -65,8 +76,10 @@ def nse_index_day(d):
     url = f"https://nsearchives.nseindia.com/content/indices/ind_close_all_{d:%d%m%Y}.csv"
     try:
         text = get(url).decode("utf-8", "replace")
-    except urllib.error.HTTPError:
-        return None
+    except urllib.error.HTTPError as e:
+        if e.code == 404:  # no file for that day (weekend / holiday / not yet published)
+            return None
+        raise  # blocked or server error: let the caller keep yesterday's data
     for row in csv.DictReader(io.StringIO(text)):
         if row["Index Name"].strip().lower() == "nifty 50":
             return {"date": d.isoformat(), "open": num(row["Open Index Value"]), "close": num(row["Closing Index Value"])}
@@ -84,6 +97,8 @@ def nifty():
                     break
         d -= timedelta(days=1)
     rows.reverse()
+    if len(rows) < 2:
+        raise RuntimeError(f"NSE returned only {len(rows)} trading day(s)")
     idx = summary("NIFTY 50", "NSE · India", "INR", rows)
 
     members = {r["Symbol"].strip(): r["Company Name"].strip() for r in csv.DictReader(io.StringIO(
@@ -150,9 +165,27 @@ def india_news(limit=6):
 
 
 if __name__ == "__main__":
+    import sys
+    try:  # last good data, used for any market whose source fails today
+        with open("markets.json", encoding="utf-8") as f:
+            previous = {m.get("region"): m for m in json.load(f).get("markets", [])}
+    except (OSError, ValueError):
+        previous = {}
+    markets, failed = [], []
+    for region, fetch in (("India", nifty), ("US", nasdaq100)):
+        try:
+            markets.append(dict(fetch(), region=region))
+        except Exception as e:
+            failed.append(region)
+            print(f"::warning::{region} fetch failed ({type(e).__name__}: {e}); keeping last good data")
+            if region in previous:
+                markets.append(previous[region])
+    if len(failed) == 2 or len(markets) < 2:
+        sys.exit("Both markets failed and no previous data to fall back on" if len(failed) == 2
+                 else "A market failed and there is no previous data for it")
     data = {"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
             "source": "NSE and Nasdaq official end-of-day data",
-            "markets": [dict(nifty(), region="India"), dict(nasdaq100(), region="US")]}
+            "markets": markets}
     try:
         data["news"] = {"source": "Google News", "items": india_news()}
     except Exception as e:  # headlines are optional
