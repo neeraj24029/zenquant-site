@@ -444,6 +444,14 @@ footer a{color:var(--ink-subtle);text-decoration:none;margin-left:20px}
     if(l)l.style.display='none';if(m)m.style.display='none';
   }
   (window.ZQ_MARKETS?Promise.resolve(window.ZQ_MARKETS):fetch('markets.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()})).then(function(data){
+    var sh=data.short, ytb=document.getElementById('yt'); // newest YouTube Short, set by the daily refresh
+    if(sh&&ytb&&/^[\w-]{11}$/.test(sh.id)&&sh.id!==ytb.dataset.id){
+      var im=ytb.querySelector('img');
+      im.onerror=function(){im.onerror=null;im.src='https://i.ytimg.com/vi/'+sh.id+'/hqdefault.jpg'};
+      im.src='https://i.ytimg.com/vi/'+sh.id+'/oar2.jpg';
+      ytb.dataset.id=sh.id;
+      if(sh.title){ytb.setAttribute('aria-label','Play: '+sh.title);ytb.querySelector('.yt-cap b').textContent=sh.title}
+    }
     var age=(Date.now()-new Date(data.updated).getTime())/36e5; // hours
     if(!(age<96))return hideMarkets(); // never show data older than 4 days as current
     var tape=[];

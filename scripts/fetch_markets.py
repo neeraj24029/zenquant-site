@@ -184,6 +184,33 @@ def india_news(limit=6):
     return items[:limit]
 
 
+# ------------------------------------------------------------- latest Short
+YT_CHANNEL = "UCiiXsIFONz3DwzDcqgBjQdQ"  # youtube.com/@NeerajPriyadarshi
+
+
+def youtube_latest_short():
+    """Newest upload from the channel's public feed that is a Short (vertical video)."""
+    import re
+    import xml.etree.ElementTree as ET
+    ns = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+    root = ET.fromstring(get(f"https://www.youtube.com/feeds/videos.xml?channel_id={YT_CHANNEL}"))
+    for e in root.findall("a:entry", ns):
+        vid = e.findtext("yt:videoId", namespaces=ns)
+        title = (e.findtext("a:title", namespaces=ns) or "").strip()
+        # A Short's /shorts/ URL answers 200; a regular video redirects to /watch
+        req = urllib.request.Request(f"https://www.youtube.com/shorts/{vid}", headers=UA, method="HEAD")
+        opener = urllib.request.build_opener(type("NoRedirect", (urllib.request.HTTPRedirectHandler,),
+                                                  {"redirect_request": lambda *a, **k: None}))
+        try:
+            if opener.open(req, timeout=20).status != 200:
+                continue
+        except urllib.error.HTTPError:
+            continue
+        return {"id": vid, "title": re.sub(r"\s*#shorts\b", "", title, flags=re.I).strip(),
+                "published": (e.findtext("a:published", namespaces=ns) or "")[:10]}
+    return None
+
+
 if __name__ == "__main__":
     import sys
     try:  # last good data, used for any market whose source fails today
@@ -215,6 +242,11 @@ if __name__ == "__main__":
         data["news"] = {"source": "Google News", "items": india_news()}
     except Exception as e:  # headlines are optional
         print("news skipped:", e)
+    try:  # newest YouTube Short for the "From our feed" section (optional)
+        data["short"] = youtube_latest_short()
+        print("short:", data["short"])
+    except Exception as e:
+        print("short skipped:", e)
     with open("markets.json", "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     # Same data as a script, so the page also works when opened straight from disk (file://)
