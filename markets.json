@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T22:22+00:00",
+  "updated": "2026-11-28T10:50+00:00",
   "source": "NSE and Nasdaq official end-of-day data",
   "markets": [
     {
@@ -180,18 +180,14 @@
       "name": "Nasdaq-100",
       "market": "Nasdaq · US",
       "currency": "USD",
-      "date": "2026-11-25",
+      "date": "2026-11-27",
       "status": "closed",
-      "open": 25309.61,
-      "close": 26046.9,
-      "prevClose": 26214.17,
-      "change": -167.27,
-      "changePct": -0.64,
+      "open": 26479.97,
+      "close": 26726.39,
+      "prevClose": 26046.9,
+      "change": 679.49,
+      "changePct": 2.61,
       "history": [
-        {
-          "d": "2026-10-27",
-          "c": 29651.44
-        },
         {
           "d": "2026-10-28",
           "c": 29813.16
@@ -275,76 +271,80 @@
         {
           "d": "2026-11-25",
           "c": 26046.9
+        },
+        {
+          "d": "2026-11-27",
+          "c": 26726.39
         }
       ],
-      "monthPct": -12.16,
+      "monthPct": -10.35,
       "gainers": [
         {
           "symbol": "SNDK",
           "name": "Sandisk Corporation",
-          "close": 80.82,
-          "changePct": 9.79
-        },
-        {
-          "symbol": "LITE",
-          "name": "Lumentum Holdings Inc.",
-          "close": 515.35,
-          "changePct": 8.14
+          "close": 85.36,
+          "changePct": 15.96
         },
         {
           "symbol": "ALAB",
           "name": "Astera Labs, Inc.",
-          "close": 204.1212,
-          "changePct": 7.24
+          "close": 206.84,
+          "changePct": 8.67
         },
         {
-          "symbol": "NBIS",
-          "name": "Nebius Group N.V.",
-          "close": 90.89,
-          "changePct": 6.94
+          "symbol": "RKLB",
+          "name": "Rocket Lab Corporation",
+          "close": 50.88,
+          "changePct": 8.21
         },
         {
-          "symbol": "MRVL",
-          "name": "Marvell Technology, Inc.",
-          "close": 139.7,
-          "changePct": 6.7
+          "symbol": "LITE",
+          "name": "Lumentum Holdings Inc.",
+          "close": 514.63,
+          "changePct": 7.98
+        },
+        {
+          "symbol": "STX",
+          "name": "Seagate Technology Holdings PLC",
+          "close": 509.66,
+          "changePct": 7.9
         }
       ],
       "losers": [
         {
           "symbol": "VRTX",
           "name": "Vertex Pharmaceuticals Incorporated",
-          "close": 522.99,
-          "changePct": -7.29
+          "close": 534.57,
+          "changePct": -5.24
         },
         {
-          "symbol": "PANW",
-          "name": "Palo Alto Networks, Inc.",
-          "close": 349.8,
-          "changePct": -1.78
-        },
-        {
-          "symbol": "TTWO",
-          "name": "Take-Two Interactive Software, Inc.",
-          "close": 224.55,
+          "symbol": "ALNY",
+          "name": "Alnylam Pharmaceuticals, Inc.",
+          "close": 162.7,
           "changePct": -1.23
         },
         {
-          "symbol": "MNST",
-          "name": "Monster Beverage Corporation",
-          "close": 42.21,
-          "changePct": -0.92
+          "symbol": "KDP",
+          "name": "Keurig Dr Pepper Inc.",
+          "close": 35.45,
+          "changePct": -0.51
         },
         {
-          "symbol": "GILD",
-          "name": "Gilead Sciences, Inc.",
-          "close": 175.17,
-          "changePct": -0.89
+          "symbol": "ORLY",
+          "name": "O'Reilly Automotive, Inc.",
+          "close": 96.28,
+          "changePct": -0.42
+        },
+        {
+          "symbol": "PAYX",
+          "name": "Paychex, Inc.",
+          "close": 118.13,
+          "changePct": -0.3
         }
       ],
       "breadth": {
-        "up": 87,
-        "down": 14,
+        "up": 94,
+        "down": 7,
         "unchanged": 0,
         "total": 101
       },
@@ -355,40 +355,40 @@
     "source": "Google News",
     "items": [
       {
-        "title": "Ircon International fined ₹7.69 lakh by NSE and BSE for board non-compliance",
+        "title": "Sukhjit Starch fined ₹2.23 lakh by BSE and NSE for LODR non-compliance",
         "source": "scanx.trade",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQTdLWHBzS0U3VnlNVmRGYTlfXzNLTGpvVU41X2xoZXJwY2tlTTgzQmt1VjhHdjNvT2dHUUJweUllaU5mNGd6Q2d3S1FIZnZGZ1J0X2NvTWdkMWl6Z0kwTG9DUlo4NlBtNHhJZUxUTlQyck43dlZGeFUwbmM2cjM5TEd4N3FNZ0FPNTVHMVNrOXFURnYtZ0NaV2RZSnJYa1A1SEhfaDVoVmRlblRucUxqYVdPbW1BWFdNQ0poS1Jn?oc=5",
-        "time": "2026-11-27T19:17+00:00"
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSWJ5d08wb0FpamhfNXhNUjl0NUI4S3ZVcHRwdWw3b0JxOGlnQmtNcDFYb1hDZHF5UElyWWRHT3JiZjZsVkNmcW9qSkt3cURJajJTc3p0VEhRVTRuajhyelBBWExaMnFRTkVJTHRSX3NfZDdDc2l2YktpVFcyOHB3cldlcDdvcVdxWnJjajhHYWg0UkpxRE1rNHdyOERCRS1vV3JEQ2J2R2VHNUF4S0hJaG5RTXllUQ?oc=5",
+        "time": "2026-11-28T10:39+00:00"
       },
       {
-        "title": "Axis Mutual Fund launches Nifty LargeMidcap 250 Index Fund; NFO open until December 11",
-        "source": "Livemint",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNZU1GNnZOdm9MRFVvVjgxRGxxSUJpa1BJQllTc2Qwbk4yT3Z4ZHZaMzR0ZWNjRmhNMnlhSTFXSmxuNGpfWXN0WkFYOTRFOGZkMVE3M2FTVm11b1ctQ3hpM3BmTFQwbmhQYkl0MEJwTDJDaGpvT1NTTWl5eWczZXZXYnMtWDNTYW5raUJ2R0JzRm83SGtibGo4MEhVWW9lRk1QNDdYUEN0NW5qMWNRdy1RRGdlVnBUMDRqeTR0Wlg5LWlweUFKV05PM184djBnYmdWR0hpWTdLdEk4Ylgyai0xUFVhcXktaUtt0gHuAUFVX3lxTFBGdFNiT3R1d2JYX2hsaVY5a2xFSjh4X2o3OTVRQkc4LW5wZWxaeVBLellCaGJvd1Z6T0UtZHlwaFlYWm4yYkVJSjYxYXFGX0VXQ2lFa09ITGNENGttUGJnUmJvMkNEbDBZYlpEX1dSQ1JnUGpwZENiQ2V6RDdpa204WUV2a2lPSEt3QjlGb0Y3MFB6OTNDd2tpU1RVNWtfdkU2ZDJ6RVA3NTM2UGRCQnpVMS1Mek9HenZBdnZfaVZ2QmdjQTF3Ty1VY3R6WWh4ejZmdjcyVmZQdmtyazM1Tms4UjJBSzM0cF9vVmRVdGc?oc=5",
-        "time": "2026-11-27T18:38+00:00"
+        "title": "MEESHO LIMITED Share Price",
+        "source": "Upstox",
+        "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1naE1vQjdiUWJSS2xLZ2x6ZE41ZGd2T2UtTWFjTWFzZU5kQ2lBQ3gxOThkeUpJVXFOdWdHeTJnQ1JTUllPN2Qza1BnQ2xZXzhNVDhJUFd4RVh0Qm02UFJsMWtVWQ?oc=5",
+        "time": "2026-11-28T10:19+00:00"
       },
       {
-        "title": "IT, bank heavyweights drag markets down 1% amid rising crude oil prices",
-        "source": "Business Standard",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOS043bFZ2c1hrS0xmeHdmbXZiSS1zVlhkNldwTXdtUlMwMDZkYm9MV3FyMjNBYmZHWXNnVWtadlBKWW1FMmVhazQtN2ZteFNZUG03SEN2dWpYVVdxRVkwM3N2eVpFOXo5LXRxQ1htN2ZXZFZWMFctM295MWF2aUNubjZNSUV6cFk0Y1BGZ05UZldBUklIN1JXazRHWkp3MkVRWm5kV2ZjVHB1eG4wemtaaDNZVGVpWVlMaDlGUjNhMzR5QTlnckktM1Q5c3hUNXA1UWfSAdcBQVVfeXFMUHItbjRDYWZGQ1pQeE9WVlJmaGhrdGRPSjVRYXpFcUx5emxrMF9MZVNRQnZhVHIxNE1PbHpIUlFKcS1SamJQOXgzZTFKenlYamQ4M1B4czRBNzAyOFpYbTVhQTljbXpRQzktU05BU0hVS0M1ZEU5NUdfVHI1WWhJZ1RPNlhESzROQWU2emhoaXhkUUpucG1ZWDZQWURvSk4zN05JZDhxeG9tOGFmU0UwVGMzYl96ZWlvUEZGd240cUgtWWtkeldLWEd6eFdRaGRHOFlVcmxXa1U?oc=5",
-        "time": "2026-11-27T18:30+00:00"
-      },
-      {
-        "title": "HEG completes demerger, lists shares on BSE, NSE",
-        "source": "ET Manufacturing",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaGw5aHVEQnNYdm4zNTRNeUxhSzhoTVlDd3Frc083MGVfWnNONkd3TVc3UkhwMW9Kd09oNjNCNkhPd3RHQk5RYWVPNjBucGhnNFd1OFJhTTRGUnlHMnVJQ1ZXR1RRakdFa3ZlMi1udmZSWjE3Rmlrd2FlQXVYSmN6TDludnpURl9DSlNCYXV1Tk5DV2ZlUV92ZG9qTDItOWI2bTJER2M0dHVQdlhhQlh4aVZIR05WaVJEM0pSemxn0gHDAUFVX3lxTE5zZGdIelhiZXhnVUI1OWJUdlVVM1AxRmplakFReXVUaHF4eVpGVmdCeTJTdm5SV1F6R0JWbzE5Z1FHaG1meklaR3JnLUFFbGkydWxkQUtaUk1BdHZRMUlXNVVzZDdkR2tzaUY0OGFwdGZ3STlxelpaNTllVTlMNThPeE1PR0pNYTAyS251a2hfTTZRTTVZWnlMdy1ZLTMwRjdJY0hYWGVEdUdSNlJWa0ZBVTJzdlRPVmM0SkVjQk9QQzRKdw?oc=5",
-        "time": "2026-11-27T17:26+00:00"
-      },
-      {
-        "title": "Highway Infrastructure submits revised valuation report to NSE",
+        "title": "BHEL fined ₹14.47 lakh by BSE and NSE for director vacancies",
         "source": "scanx.trade",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQREg0a1p1dG5Nelo4c01kQVRJWGQweF9kNUpwMkcwT0tRMWlyazRJekViOExhSFdMWnl6d1BiUUx3QzJhR3FVSFBPWDFFVnZBa2RsNUd4eUlvQ0t0R3duVWtfRklsN0lYSVJvSjE1NGVpY1l1U0QxYXA5ZXNCQm1NR3hURVlOTHl0V29IdF9kWmctSkswQTdzYWZrVlduYWUyZUxfMEtJeEI1ejNYeU1UazBmZDlDZkU?oc=5",
-        "time": "2026-11-27T17:07+00:00"
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQazdNNTBGNVlpenlJWnZqYlNkSl9kTEhJLW1ldlRzaWxDM2ZqdWZscktSc1R2MEJZaTZXenBlMWt4RHA3U2tkX0xOTmFSaEU1S2lPTzVFOXpKQ2FNZzh1alhkSVJHQUhPWTRNeXoxc1RRdjlRS1ZHbGRrRUtzZDVvWFhOTTh4dUYxamdVXzBJWUFUSmlDU3JiNjNYUlRtclphcHF4VFR1eVc?oc=5",
+        "time": "2026-11-28T09:44+00:00"
       },
       {
-        "title": "Stock Market Prediction for Monday 30 Nov: GDP and Month-End",
-        "source": "Univest",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBZZTdUQmRkZXZUeDhWQURUY1BDTHI3ZGtCOGdKQ3FwbXAyR19uZ21JYk9OOGRjREs3ZlpxVGJNX0lJQ2w1Y0J6aHg0OFhXVThJLTYtRm9lMEdZOGdlZ052cjgwd3hETDlPSDFaMHhleG5fTmdW?oc=5",
-        "time": "2026-11-27T17:05+00:00"
+        "title": "Antelopeus Selan Energy fined ₹3.01 lakh each by BSE and NSE",
+        "source": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdnVkcFZNWUQyc1ZwRGV6dFNSemtJVklIN0VEOHB4RWtaTWJqQWM0RHEwT1ZzOHE1aFRZRThmMEF5WndYNkFUSFpEVW1KUFpyNFNTSk5FODF4UTVrb2E3eUk1OGdMSXc0WFkzMDdIQWZnWWtRYUdmVG9pMTRkZDgzb0I5ZkcwUmt1bGJTVW9Wb1hBWlc1bnJQRnhrZ2RBY2hJNU01MlZOaUJtN24tc0E?oc=5",
+        "time": "2026-11-28T09:34+00:00"
+      },
+      {
+        "title": "Milky Mist Dairy Food Limited Share Price - Live NSE: MILKYMIST Stock Price & Chart",
+        "source": "Upstox",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBXZXgtZjU3dWl1RnQ3TDhTSmUySkl2V0tHSFdYRUx3VDM2UmtNbnlRMEZueEJlRDNYZV9qd3dhODZ6YlVMWDcwZkpwdkVVcXlMZENPMUlNUzZQSjNlMEFJRnhjc3V3YTlyczhOaDRSVQ?oc=5",
+        "time": "2026-11-28T09:15+00:00"
+      },
+      {
+        "title": "Top 3 Sectors Make Up 55% of Nifty 50; Which Stocks Lead in Weightage?",
+        "source": "FlipItMoney",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOM3JfY3AtendEWHIzdXdtZWloRGJJamJKWENabE51eGd2NUJmdmhXWTBBUWllT3NhUnBKOXhoMnpHY1pHMktJVl83ZUJvWXprczZBTFRkaFd4RUNRWlhfUnZhUVU0S3lQNGQ0NEs5YVpTYlJIQks1NWZFb0wxVm5tUS1oWHkwUmVCOVJCM0hNenhlZFpZWlEzMGlR?oc=5",
+        "time": "2026-11-28T09:15+00:00"
       }
     ]
   },
